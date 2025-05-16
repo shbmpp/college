@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --unit: calc(1vh + 2.5vw);
+      --border: 0.4vh;
+      --font: clamp(0.9em, 1.5vw, 1.2em);
+      --col1: #FBFFE4;
+      --col2: #A3D1C6;
+      --col3: #B3D8A8;
+      --col4: #3D8D7A;
+      
+    }
+    
+    body {
+      user-select: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(190deg, var(--col1), var(--col1));
+      height: 100vh;
+      color: var(--col1);
+      width: 100vw;
+      overflow: hidden;
+      font-size: var(--unit);
+      
+      
+      
+      font-family: "Reggae One", system-ui;
+      font-weight: 400;
+      font-style: normal;
+      
+      
+      
+      
+      
+      
+    }
+    
+    
+    
+    
+    
+    span {
+      font-size: var(--unit);
+      font-weight: bold;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0%;
+      height: 5%;
+      width: 100vw;
+      z-index: 1000;
+    }
+    
+    span a {
+      text-decoration: none;
+      color: var(--col2);
+      animation: fusionPulse 2s infinite ease-in-out;
+    }
+    
+    #tabs {
+      top: 6%;
+      position: fixed;
+      display: flexbox;
+      z-index: 999;
+      margin: 0;
+    }
+    
+    #edit {
+      width: 25vw;
+      top: 3%;
+      right: 1%;
+      position: fixed;
+      display: inline-flex;
+      flex-direction: row;
+      color: var(--col4);
+      & bdi {
+        font-size: 30%;
+        font-weight: 900;
+        padding: 0%;
+        margin: 0%;
+        display: inline-block;
+        text-decoration-line: underline;
+      }
+      
+      & i {
+        margin-left: 1%;
+        font-size: 50%;
+      }
+    }
+    
+    #courseTabs .tab {
+      padding: 2% 10%;
+    }
+    
+    .tabs {
+      width: 100vw;
+      display: flex;
+      margin: 0%;
+      position: relative;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .tab {
+      padding: 2% 3%;
+      margin: 0%;
+      border: 2px solid var(--col4);
+      box-sizing: border-box;
+      border-radius: 20px;
+      background-color: var(--col2);
+      color: var(--col4);
+      font-weight: bold;
+      font-size: 50%;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .tab.active {
+      background-color: var(--col4);
+      color: var(--col1);
+      box-shadow: 0 1% 10px rgba(0, 0, 0, 0.2);
+      font-size: 85%;
+      border: 3px double var(--col3);
+      border-radius: 20px;
+    }
+    
+    
+    
+    strong:first-child {
+      /*animation: fusionPulse 10s infinite ease-in-out;*/
+      display: inline;
+      width: 90%;
+      white-space: wrap;
+      /* Needed for transform effects */
+      font-size: 150%;
+      padding: .5%;
+      background: linear-gradient(90deg, var(--col1), var(--col3));
+      border-radius: 15px;
+    }
+    
+    strong:nth-child(2) {
+      font-size: 150%;
+      font-weight: 700;
+      display: inline;
+      color: var(--col1);
+      border-radius: 15px;
+      background: linear-gradient(90deg, var(--col4), var(--col3));
+      padding: .5%;
+      margin: .55%;
+    }
+    
+    strong:nth-child(3) {
+      font-size: 130%;
+      margin-left: 1%;
+    }
+    
+    em {
+      font-style: normal;
+      display: inline-block;
+      font-weight: 900;
+      font-size: 100%;
+      box-sizing: border-box;
+      border: 1.5px dotted var(--col4);
+      background: var(--col2);
+      color: var(--col1);
+      border-radius: 30px;
+      margin: 0%;
+      padding: 1%;
+    }
+    
+    em.shake {
+      animation: shaking 1s ease-in-out infinite;
+    }
+    
+    @keyframes fusionPulse {
+      0% {
+        opacity: 0.7;
+        transform: scale(1);
+        color: var(--col4);
+      }
+      
+      50% {
+        opacity: 1;
+        transform: scale(1.02);
+        color: var(--col4);
+      }
+      
+      100% {
+        opacity: 0.7;
+        transform: scale(1);
+        color: var(--col4);
+      }
+    }
+    
+    
+    sup {
+      margin: 0;
+      padding: 0;
+    }
+    
+    hr {
+      margin: 0;
+      border: none;
+      padding: 0;
+      height: 50px;
+      width: 100%;
+      background: var(--col1);
+    }
+    
+    
+    footer {
+      position: fixed;
+      bottom: 0;
+      height: 5vh;
+      background-color: var(--col4);
+      color: var(--col1);
+      width: 100%;
+      justify-content: center;
+      font-size: 50%;
+      line-height: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      & a {
+        color: deeppink;
+        text-decoration: none;
+        -webkit-text-stroke: .25px pink;
+        letter-spacing: 1px;
+      }
+      
+    }
+    
+    
+    
+    #studentPromptBox {
+      width: 50vw;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 2px solid var(--col4);
+      border-radius: 10px;
+      background-color: var(--col2);
+      margin-top: 6em;
+      text-align: center;
+      position: relative;
+      z-index: 2001;
+      font-size: var(--unit);
+    }
+    
+    
+    #studentPromptBox select,
+    #studentPromptBox button {
+      display: inline;
+      width: 40vw;
+      height: 5vh;
+      border: none;
+      border-radius: 15px;
+      font-size: 70%;
+      text-align: center;
+      background: var(--col3);
+      color: var(--col4);
+    }
+    
+    #studentForm {
+      justify-content: center;
+    }
+    
+    .select-container {
+      margin: 5%;
+      display: flex;
+      padding: 5%;
+      font-size: 100%;
+    }
+    
+    #studentPromptBox button {
+      background-color: var(--col4);
+      color: var(--col1);
+      padding: 0em;
+      border: 2px double var(--col2);
+      border-radius: 15px;
+      cursor: pointer;
+      margin-top: 0em;
+      font-size: 70%;
+    }
+    
+    #studentPromptBox button:hover {
+      background-color: var(--col3);
+    }
+    
+    
+    .table-container {
+      position: fixed;
+      top: 23%;
+      height: 71.5%;
+      overflow-x: hidden;
+      overflow-y: auto;
+      width: 95vw;
+      font-size: 50%;
+      padding: 0%;
+      margin: 0;
+      border-radius: 15px;
+    }
+    
+    .timetable-wrapper {
+      width: 100%;
+      position: relative;
+      scroll-behavior: smooth;
+    }
+    
+    #contentArea {
+      display: flex;
+      width: 600%;
+      /* 100% * number of days (6) */
+      transition: transform 0.4s ease-in-out;
+    }
+    
+    #contentArea .slide {
+      width: calc(95vw * 6);
+      flex-shrink: 0;
+      display: table-row-group;
+      /* Required to keep table row formatting */
+      color: var(--col4);
+      display: grid;
+      
+    }
+    
+    .slide p {
+      padding: 0%;
+      margin: 0.5% 0 0 1%;
+      display: flex;
+      flex-direction: column;
+      white-space: nowrap;
+      width: 90vw;
+      border-radius: 15px;
+      border: 2px solid var(--col4);
+      background: var(--col3);
+    }
+    
+    tr {
+      border-radius: 15px;
+      width: 95vw;
+    }
+    
+    
+    @keyframes contentFadeIn {
+      from {
+        opacity: 0;
+      }
+      
+      to {
+        opacity: 1;
+      }
+    }
+    
+    /* Add this class for applying the animation */
+    #contentArea.content-animate {
+      animation: contentFadeIn 0.4s ease-out;
+    }
+    
+    @keyframes shaking {
+      0% {
+        transform: none;
+      }
+      
+      10% {
+        transform: rotate(10deg) scale(1.05);
+      }
+      
+      20% {
+        transform: rotate(-10deg) scale(1.05);
+      }
+      
+      30% {
+        transform: rotate(10deg) scale(1.05);
+      }
+      
+      40% {
+        transform: rotate(-10deg) scale(1.05);
+      }
+      
+      50% {
+        transform: rotate(10deg) scale(1.05);
+      }
+      
+      60% {
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="studentPromptBox">
+    <form id="studentForm">
+      <H4> CLASS ROUTINE FOR DAY DEPARTMENT &#128221;</H4>
+      <div class="select-container">
+        <label for="semesterSelect" hidden></label>
+        <select id="semesterSelect" required>
+          <option value="" hidden>Select Semister</option>
+          <option value="1">1st</option>
+          <option value="2">2nd</option>
+          <option value="3">3rd</option>
+          <option value="4">4th</option>
+          <option value="5">5th</option>
+          <option value="6">6th</option>
+          <option value="7">7th</option>
+          <option value="8">8th</option>
+        </select>
+      </div>
+      
+      <div class="select-container">
+        <label for="departmentSelect" hidden></label>
+        <select id="departmentSelect" required>
+          <option value="" hidden>Select Stream</option>
+          <option value="bcom">B.Com. (DAY)</option>
+          <option value="ba">B.A.</option>
+          <option value="bsc">B.Sc.</option>
+        </select>
+      </div>
+      
+      <button type="submit">Save Student Info &#8505;</button>
+    </form>
+  </div>
+  
+  <span><a href="https://bccrishra.ac.in/"><i class="fas fa-external-link-alt"></i> <!-- For outbound URL -->BIDHAN CHANDRA COLLEGE</a></span>
+  <div id="edit">
+    <bdi>hiuffu </bdi><i class="fa-solid fa-user-pen"></i>
+    <!--<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.3 2.3l9.4 9.4-2.6 2.6-9.4-9.4 2.6-2.6zm-2.6 2.6L2 14.6V22h7.4l7.7-7.7-9.4-9.4z" fill="black" />
+    </svg>-->
+  </div>
+  <div id="tabs">
+    
+    <!-- Course Tabs -->
+    <div class="tabs hidden" id="courseTabs">
+      <div class="tab" data-course="bcom">B.Com.</div>
+      <div class="tab" data-course="ba">B.A.</div>
+      <div class="tab" data-course="bsc">B.Sc.</div>
+    </div>
+    
+    <!-- Semester Tabs -->
+    <div class="tabs hidden" id="semesterTabs">
+      <div class="tab" data-semester="1st">1st</div>
+      <div class="tab" data-semester="2nd">2nd</div>
+      <div class="tab" data-semester="3rd">3rd</div>
+      <div class="tab" data-semester="4th">4th</div>
+      <div class="tab" data-semester="5th">5th</div>
+      <div class="tab" data-semester="6th">6th</div>
+      <div class="tab" data-semester="7th">7th</div>
+      <div class="tab" data-semester="8th">8th</div>
+    </div>
+    
+    <!-- Day Tabs -->
+    <div class="tabs hidden" id="dayTabs">
+      <div class="tab" data-day="mon">MON</div>
+      <div class="tab" data-day="tue">TUE</div>
+      <div class="tab" data-day="wed">WED</div>
+      <div class="tab" data-day="thu">THU</div>
+      <div class="tab" data-day="fri">FRI</div>
+      <div class="tab" data-day="sat">SAT</div>
+    </div>
+  </div>
+  <!-- Table Content -->
+  <div class="table-container hidden">
+    <div class="timetable-wrapper">
+      <table id="contentArea">
+        <tbody class="slide" id="mon-content"> </tbody>
+        <tbody class="slide" id="tue-content"> </tbody>
+        <tbody class="slide" id="wed-content"> </tbody>
+        <tbody class="slide" id="thu-content"> </tbody>
+        <tbody class="slide" id="fri-content"> </tbody>
+        <tbody class="slide" id="sat-content"> </tbody>
+      </table>
+    </div>
+  </div>
+  <footer>
+    <p> Version 5.25.0 </p>
+    <a href="https://www.instagram.com/shbmpp/"><i class="fa-brands fa-instagram"></i> shbmpp</a>
+  </footer>
+  
+  <script>
+    // Sc.hedule data
+    const teacher_names = {
+      BCOM: { // 1
+        ENG: { AKP: "Asis Kumar Pan", PKB: "Prabir Kanti Basu", SS: "Sunandita Sarker", SPS: "Saptaparna Saha", AS: "Abir Sen" },
+        CVAC: { SS: "Soumya Saha", AK: "Abdul Khaleque", AKS: "Anjay Kumar Singh", DM: "Debtanu Majee", KR: "Kamal Roy", ADM: "Anindita Mitra", AM: "Amit Mahato", BR: "Bhanumati Ray" },
+        ECO: { TM: "Tusher Mukherjee", AG: "Apala Ghosh", SRB: "Shawil Roy Basu" },
+        COM: { SG: "Subhajit Ghosh", RKS: "Radha Kanta Sarkar", MD: "Mahadev De", DM: "Debarbata Mukherjee", PD: "Pinaki Dutta" },
+        MTH: { SC: "Sucheta Chakrobarty", PK: "Puja Koley" },
+        BNG: { SM: "Sukanta Mukhapadhyay", PC: "Piyali Chakraborty" },
+        IT: { AJR: "Apurba Jyoti Roy" },
+        HIN: { AKS: "Anjay Kumar Singh" }
+      },
+      BSC: {
+        CMS: { UM: "Unmesh Mandal", SKP: "Sovan Kumar Panda", AJR: "Apurba Jyoti Roy", GD: "Goutam Das", RS: "Rimpi Saha" },
+        ECO: { SRB: "Shawil Roy Basu", TM: "Tusher Mukherjee", AG: "Apala Ghosh" },
+        ELT: { SKP: "Sovan Kumar Panda", AK: "Abdul Khaleque", SS: "Soumya Saha" },
+        MTH: { RK: "Ramesh Kar", MS: "Md. Saifuddin", SC: "Sucheta Chakraborty", PK: "Puja Koley" },
+        PHS: { SS: "Soumya Saha", AK: "Abdul Khaleque", MKS: "Masud Karim Sarkar" },
+        ENG: { AKP: "Asis Kumar Pan", PKB: "Prabir Kanti Basu", SS: "Sunandita Sarker", SPS: "Saptaparna Saha", AS: "Abir Sen" },
+        CVAC: { SS: "Soumya Saha", AK: "Abdul Khaleque", AKS: "Anjay Kumar Singh", DM: "Debtanu Majee", KR: "Kamal Roy", ADM: "Anindita Mitra", AM: "Amit Mahato", BR: "Bhanumati Ray" }
+      },
+      BA: {
+        BGN: { TM: "Tanusree Mandal", NM: "Nagen Murmu", SM: "Sukanta Mukhopadhyay", PC: "Piyali Chakraborty", ASD: "Arpita Sil Dey" },
+        EDC: { SS: "Sanjay Sarkar", SNS: "Sunita Shaw", SN: "Sima Nandy", GG: "Gargi Ganguly" },
+        ENG: { AKP: "Asis Kumar Pan", PKB: "Prabir Kanti Basu", SS: "Sunandita Sarker", SPS: "Saptaparna Saha", AS: "Abir Sen" },
+        GEO: { LCP: "Lakshman Chandra Pal", AS: "Arghya Saha", PB: "Pabitra Bhattacharya" },
+        HIN: { AKS: "Anjay Kumar Singh" },
+        HIS: { SMB: "Samindra Mohan Biswas", MD: "Mitali Dey", HB: "Haimanti Banarjee", EK: "Epsita Khan" },
+        PHI: { MC: "Madhushree Chatterjee", BR: "Bhanumati Ray", MD: "Manisha Das" },
+        PLS: { DD: "Debdas Dey", DM: "Debtanu Majee", PKS: "Prashant Kumar Sharma", KR: "Kamal Roy", ADM: "Anindita Mitra" },
+        SAN: { CM: "Chinmoy Mishra", AM: "Amit Mahato", ASR: "Arpita Singha Roy" }
+      }
+    };
+    
+    
+    // Subject names database
+    const subject_names = {
+      BCOM: {
+        TF: ['', " - FOUR YEAR", " - THREE YEAR"],
+        CC: ["", "FINANCIAL ACCOUNTING I", "COST ACCOUNTING I", ["", "COST ACCOUNTING II", "DIRECT TAX I"],
+          ["", "FINANCIAL ACCOUNTING II", "DIRECT TAX II & E-FILLING", "BUSINESS COMMUNICATION", "BUSINESS REGULATORY"],
+          ["", "FINANCIAL MANAGEMENT", "ACCOUNTING THEORY", "CORPORATE ACCOUNTING", "COMPANY LAW"],
+          ["", "INDIRECT TAX", "AUDITING & ASSURANCE", "BUSINESS MATHEMATICS", "INDIAN FINANCIAL SYSTEM"], "", ""
+        ],
+        MN: ["", "PRINCIPLES AND PRACTICE OF MANAGEMENT", "BUSINESS MANAGEMENT (HRM)", "CONSUMER BEHAVIOUR", "SALES MANAGEMENT",
+          ["", "PRODUCT & PRICING MANAGEMENT", "MARKETING COMMUNICATION"],
+          ["", "RETAIL MANAGEMENT & SERVICES MARKETING", "RURAL & INTERNATIONAL MARKETING"]
+        ],
+        SEC: ["", "ENTREPRENEURSHIP DEVELOPMENT", "INFORMATION TECHNOLOGY", "COMPUTERIZED ACCOUNTING"],
+        IDC: ["", "MICROECONOMICS", "MACROECONOMICS", "INDIAN ECONOMICS"],
+        AEC: ["", "COMPULSORY ENGLISH", "COMPULSORY ENGLISH", ["ALTERNATIVE ENGLISH", "(AEC) - BENGALI", "(AEC) - HINDI"],
+          ["ALTERNATIVE ENGLISH", "(AEC) - BENGALI", "(AEC) - HINDI"]
+        ],
+        CVAC: ["", ["", "CONSTITUTIONAL VALUE & FUNDAMENTAL DUTIES", "FUNDAMENTALS OF ENVIRONMENT"],
+          ["", "INDIAN KNOWLEDGE SYSTEM", "ENVIRONMENTAL EDUCATION"]
+        ]
+      },
+      BA: {
+        HIS: {
+          NAME: "HISTORY",
+          DSCC: " - FOUR YEAR",
+          CC: " - THREE YEAR",
+          MN: " - MINOR",
+          SEC: " - (SEC)",
+          IDC: " - (IDC)",
+          
+        },
+        GEO: {
+          NAME: "GEOGRAPHY",
+          DSCC: " - FOUR YEAR",
+          CC: " - THREE YEAR",
+          MN: " - MINOR",
+          SEC: " - (SEC)",
+          IDC: " - (IDC)",
+          
+        },
+        PHI: {
+          NAME: "PHILOSOPHY",
+          DSCC: " - FOUR YEAR",
+          CC: " - THREE YEAR",
+          MN: " - MINOR",
+          SEC: " - (SEC)",
+          IDC: " - (IDC)",
+          
+        },
+        ENG: {
+          NAME: "ENGLISH",
+          DSCC: " - FOUR YEAR",
+          CC: " - THREE YEAR",
+          MN: " - MINOR",
+          SEC: " - (SEC)",
+          IDC: " - (IDC)",
+          
+        },
+        PLS: {
+          NAME: "POLITICAL SCIENCE",
+          DSCC: " - FOUR YEAR",
+          CC: " - THREE YEAR",
+          MN: " - MINOR",
+          SEC: " - (SEC)",
+          IDC: " - (IDC)",
+          
+        },
+        BGN: {
+          NAME: "BENGALI",
+          DSCC: " - FOUR YEAR",
+          CC: " - THREE YEAR",
+          MN: " - MINOR",
+          SEC: " - (SEC)",
+          IDC: " - (IDC)",
+          
+        },
+        EDC: {
+          NAME: "EDUCATION",
+          DSCC: " - FOUR YEAR",
+          CC: " - THREE YEAR",
+          MN: " - MINOR",
+          SEC: " - (SEC)",
+          IDC: " - (IDC)",
+          
+        },
+        SAN: {
+          NAME: "SANSKRIT",
+          DSCC: " - FOUR YEAR",
+          CC: " - THREE YEAR",
+          MN: " - MINOR",
+          SEC: " - (SEC)",
+          IDC: " - (IDC)",
+          
+        },
+        
+        AEC: ["", "COMPULSORY ENGLISH", "COMPULSORY ENGLISH", ["ALTERNATIVE ENGLISH", "(AEC) - BENGALI", "(AEC) - HINDI"],
+          ["ALTERNATIVE ENGLISH", "(AEC) - BENGALI", "(AEC) - HINDI"]
+        ],
+        CVAC: ["", ["", "CONSTITUTIONAL VALUE & FUNDAMENTAL DUTIES", "FUNDAMENTALS OF ENVIRONMENT"],
+          ["", "INDIAN KNOWLEDGE SYSTEM", "ENVIRONMENTAL EDUCATION"]
+        ]
+      },
+      BSC: {
+        PHS: {
+          NAME: "PHYSICS",
+          DSCC: " - FOUR YEAR",
+          CC: " - THREE YEAR",
+          MN: " - MINOR",
+          SEC: " - (SEC)",
+          IDC: " - (IDC)",
+          
+        },
+        CMS: {
+          NAME: "COMPUTER SCIENCE",
+          DSCC: " - FOUR YEAR",
+          CC: " - THREE YEAR",
+          MN: " - MINOR",
+          SEC: " - (SEC)",
+          IDC: " - (IDC)",
+          
+        },
+        MTH: {
+          NAME: "MATHEMATICS",
+          DSCC: " - FOUR YEAR",
+          CC: " - THREE YEAR",
+          MN: " - MINOR",
+          SEC: " - (SEC)",
+          IDC: " - (IDC)",
+          
+        },
+        ELT: {
+          NAME: "ELECTRONICS",
+          DSCC: " - FOUR YEAR",
+          CC: " - THREE YEAR",
+          MN: " - MINOR",
+          SEC: " - (SEC)",
+          IDC: " - (IDC)",
+          
+        },
+        ECO: {
+          NAME: "ECONOMICS",
+          DSCC: " - FOUR YEAR",
+          CC: " - THREE YEAR",
+          MN: " - MINOR",
+          SEC: " - (SEC)",
+          IDC: " - (IDC)",
+          
+        },
+        
+        AEC: ["", "COMPULSORY ENGLISH", "COMPULSORY ENGLISH", ["ALTERNATIVE ENGLISH", "(AEC) - BENGALI", "(AEC) - HINDI"],
+          ["ALTERNATIVE ENGLISH", "(AEC) - BENGALI", "(AEC) - HINDI"]
+        ],
+        CVAC: ["", ["", "CONSTITUTIONAL VALUE & FUNDAMENTAL DUTIES", "FUNDAMENTALS OF ENVIRONMENT"],
+          ["", "INDIAN KNOWLEDGE SYSTEM", "ENVIRONMENTAL EDUCATION"]
+        ]
+      }
+    };
+    
+    function getSubjectName(code) {
+      const codeStr = String(code).padStart(5, '0');
+      const [sem, dept, year, subj, index] = codeStr.split('').map(Number);
+      const departments = { 1: 'BCOM', 2: 'BA', 3: 'BSC' };
+      const department = subject_names[departments[dept]];
+      if (!department) return 'Invalid department';
+      if (dept === 1) {
+        const groups = ['TF', 'CC', 'MN', 'SEC', 'IDC', 'AEC', 'CVAC'];
+        const groupKey = groups[subj] || 'CC';
+        let item = department[groupKey]?.[sem];
+        const icons = [`<i class="fa-solid fa-coins"></i>`, `<i class="fa-solid fa-scale-unbalanced-flip"></i>`, `<i class="fa-solid fa-chalkboard"></i>`, `<i class="fa-solid fa-hand-holding-dollar"></i>`, `<i class="fa-solid fa-language"></i>`, `<i class="fa-solid fa-earth-asia"></i>`];
+        const icon = icons[subj - 1] || `<i class="fa-solid fa-coins"></i>`;
+        if (item === undefined) item = 'B.Com. ';
+        if (Array.isArray(item)) item = item[index || 0] || item[0] || '';
+        if (sem > 4) {
+          const yearSuffix = year === 1 ? 'HONOURS' : year === 2 ? 'GENERAL' : '';
+          return `${icon} ${item}${yearSuffix}`.trim();
+        } else {
+          const yearSuffix = year === 1 ? department['TF'][1] : year === 2 ? department['TF'][2] : '';
+          return `${icon} ${item}${yearSuffix}`.trim();
+        }
+      } else {
+        const keys = Object.keys(department);
+        const icons = [
+          [`<i class="fa-solid fa-landmark-dome"></i>`, `<i class="fa-solid fa-map-location-dot"></i>`, `<i class="fa-solid fa-book-journal-whills"></i>`, `<i class="fa-solid fa-earth-asia"></i>`, `<i class="fa-solid fa-landmark-flag"></i>`, `<i class="fa-solid fa-hands-praying"></i>`, `<i class="fa-solid fa-graduation-cap"></i>`, `<i class="fa-solid fa-om"></i>`, `<i class="fa-solid fa-language"></i>`, `<i class="fa-solid fa-yin-yang"></i>`],
+          [`<i class="fa-solid fa-atom"></i>`, `<i class="fa-solid fa-computer"></i>`, `<i class="fa-solid fa-square-root-variable"></i>`, `<i class="fa-solid fa-microchip"></i>`, `<i class="fa-solid fa-chart-line"></i>`, `<i class="fa-solid fa-language"></i>`, `<i class="fa-solid fa-yin-yang"></i>`]
+        ];
+        if ((dept === 2 && [9, 8].includes(subj)) || (dept === 3 && [6, 5].includes(subj))) {
+          let groupKey = '';
+          if (dept === 2) groupKey = subj === 8 ? 'AEC' : 'CVAC';
+          if (dept === 3) groupKey = subj === 5 ? 'AEC' : 'CVAC';
+          let item = department[groupKey]?.[sem];
+          if (item === undefined) return 'Course not found';
+          
+          const icon = icons[dept - 2][subj] || `<i class="fa-solid fa-book-open"></i>`;
+          if (Array.isArray(item)) item = item[index] || item[0] || '';
+          if (year === 0) return `${icon} ${item}`;
+          if (sem > 4) {
+            const yearType = year === 1 ? 'HONOURS' : (year === 2 ? 'GENERAL' : '');
+            return `${icon} ${item} - ${yearType}`.trim();
+          } else {
+            const yearType = year === 1 ? 'FOUR YEAR' : 'THREE YEAR';
+            return `${icon}  ${item} - ${yearType}`.trim();
+          }
+        } else {
+          const subjectKeys = keys.filter(k => k.length === 3);
+          const subject = department[subjectKeys[subj]];
+          if (!subject?.NAME) return 'HINDI';
+          const icon = icons[dept - 2][subj] || `<i class="fa-solid fa-book-open"></i>`;
+          const papers = ['DSCC', 'CC', 'MN', 'SEC', 'IDC'];
+          const paper = papers[index - 1];
+          if (sem < 5) {
+            return `${icon} ${subject.NAME}${subject[paper] || ''}`.trim();
+          } else {
+            const papers6 = ['MN', 'SEC', 'IDC'];
+            const paper6 = papers6[index - 3];
+            const yearType = year === 1 ? '- HONOURS' : (year === 2 ? '- GENERAL' : '');
+            return `${icon} ${subject.NAME} ${subject[paper6] || ''} ${yearType || ''}`.trim();
+          }
+        }
+      }
+    }
+    
+    
+    function getTeacherName(code) {
+      const departments = ["BCOM", "BA", "BSC"];
+      const codeStr = code.toString();
+      const deptIndex = parseInt(codeStr[0]) - 1;
+      const subjectIndex = parseInt(codeStr[1]) - 1;
+      const teacherIndex = parseInt(codeStr[2]) - 1;
+      
+      const deptKey = departments[deptIndex];
+      const department = teacher_names[deptKey];
+      if (!department) return '';
+      
+      const subjectKeys = Object.keys(department);
+      const subjectKey = subjectKeys[subjectIndex];
+      const subject = department[subjectKey];
+      if (!subject) return '';
+      
+      const teacherNames = Object.values(subject);
+      return teacherNames[teacherIndex] || '';
+    }
+    
+    
+    const ROOM = {
+      00: '',
+      ...Object.fromEntries([...Array(7).keys()].map(i => [i + 1, `NEW BUILDING-${i+1}`])),
+      19: "ROOM-9",
+      10: "ROOM-10",
+      14: "ROOM-14",
+      15: "ROOM-15",
+      16: "ROOM-16",
+      17: "ROOM-17",
+      20: "ROOM-20",
+      21: "ROOM-21A",
+      22: "ROOM-21B",
+      23: "ROOM-23",
+      25: "ROOM-25",
+      ...Object.fromEntries([...Array(15).keys()].map(i => [i + 27, `ROOM-${i+27}`])),
+      ...Object.fromEntries([...Array(5).keys()].map(i => [i + 41, `VIDYASAGAR HALL-${i+1}`])),
+      ...Object.fromEntries([...Array(2).keys()].map(i => [i + 51, `COMPUTER LAB-${i+1}`]))
+    };
+    
+    
+    
+    const scheduleData = {
+      "1stx": {
+        bcom: {
+          mon: ["", "", "", "", "", "", ""],
+          tue: ["", "", "", "", "", "", ""],
+          wed: ["", "", "", "", "", "", ""],
+          thu: ["", "", "", "", "", "", ""],
+          fri: ["", "", "", "", "", "", ""],
+          sat: ["", "", "", "", "", "", ""]
+        },
+        ba: {
+          mon: ["", "", "", "", "", "", ""],
+          tue: ["", "", "", "", "", "", ""],
+          wed: ["", "", "", "", "", "", ""],
+          thu: ["", "", "", "", "", "", ""],
+          fri: ["", "", "", "", "", "", ""],
+          sat: ["", "", "", "", "", "", ""]
+        },
+        bsc: {
+          mon: ["", "", "", "", "", "", ""],
+          tue: ["", "", "", "", "", "", ""],
+          wed: ["", "", "", "", "", "", ""],
+          thu: ["", "", "", "", "", "", ""],
+          fri: ["", "", "", "", "", "", ""],
+          sat: ["", "", "", "", "", "", ""]
+        }
+      },
+      "2nd": {
+        bcom: {
+          mon: ["", "", "1204517", "1104217 2204514", "0307117", "1307152", "1610010"],
+          tue: ["", "2403114", "2204217", "1403317", "1104117 2104414 1622216", "1204235 2622217", "0501520"],
+          wed: ["", "1610016", "2610016", "1403117 2204214", "2104314", "1204436 2612510", ""],
+          thu: ["", "", "1104217 2204314", "2403314", "0307120", "1204316 2104517", "1104110"],
+          fri: ["1204217", "", "1204317 2104214", "1104517 2104114", "2204414", "", ""],
+          sat: ["", "", "", "1104317 2104114", "2307152 1204314", "0612817 1104436", ""]
+        },
+        ba: {
+          mon: ["", "0400000 0300000 1511528 1114323 2729303 1612101", "0501216 1114323 1612201 0303329 1418235", "1541428 1016220 1114223 0303436 2622106", "0551130 0056427 0257333 0652207 0353329 0458535", "1803420", "1910034 2918235"],
+          tue: ["0700000 0408535", "1511428 2026333 1016134 1114238 1217341 1612301 1313229 0448407", "1511130 1016230 1114123 2124238 1217141 2227216 1612101 1313129 1418307", "1036134 1237141 0739301 1333329 0632407 1438435", "2521328 0927120", "1511228 2237320 1418134", "1803329"],
+          wed: ["0531228 0333229 1237330", "0300000 1016233 0709201 1612405", "2910020 1016136 1114123 1217242 0303329 1612201", "1541128 1016434 1114223 1217142 0602206 0448407 0303227", "1511330 2026134 1313527 1418301", "", "0036134 0408135"],
+          thu: ["0700000 0408527", "2026420 1016134 1114339 1217242 1313429 1612301 1448430", "1541328 1016433 2124339 1612406 0237116 1313327 0448507", "0331416 0036305 0739201 0632406 0237244 0333533 2428434", "0551207 0759201 0257130 0353216 0652405 0458341 0056134", "2916120 1511244 1313129 1418102", "1511528 1612201"],
+          fri: ["2739220 1632206 0333429", "0400000 0300000 0700000 1511330 1016436 0749310 0448535", "0500000 0300000 1016234 0341128 1114223 1612201 1418335", "0541428 2622316 1418320 1313435", "1511533 2026220 1418235", "0056233 0551528 0652107 0458442 0759301", "0300000 2428336"],
+          sat: ["1511328 1016336 1114123 1418235 1313529", "2026120 1016334 1313429 1612201 1418228", "0200000 1511233 2124137 1612101 1418300 0247241", "0739201 0632306 0533429", "0551328 0257234 0353533 0458216 0759201", "1313129 1418135", ""]
+        },
+        bsc: {
+          mon: ["2422130 0234421", "1214421 2025322", "0101151 2422142 2025322", "2101151 0353215 2234421", "0452142 0101551", "0506229", "0627820"],
+          tue: ["", "0234221", "1214221 2025222", "0101152 0432242", "0101452", "2323115 2422142 2025319", "2025219 2323115"],
+          wed: ["2025122", "0610029 0353315 2234441", "0101351 2422143", "0101351", "0101551 1214210", "2025221", "1214121 2323115"],
+          thu: ["2025321", "2025221", "010114l51", "0101551 2422242 2025319", "0101551 0452142 2025119 1314221", "0627110", "0101451"],
+          fri: ["", "0234221 2025222", "0101452 1214210 2422142 2025222", "0101552 0353215", "0101552", "2025119", ""],
+          sat: ["0234241", "0234421", "1214442 2025322 2323115", "0101351 2025322", "0101151", "0101151", "0234121"]
+        }
+      },
+      "3rdx": {
+        bcom: {
+          mon: ["", "", "", "", "", "", ""],
+          tue: ["", "", "", "", "", "", ""],
+          wed: ["", "", "", "", "", "", ""],
+          thu: ["", "", "", "", "", "", ""],
+          fri: ["", "", "", "", "", "", ""],
+          sat: ["", "", "", "", "", "", ""]
+        },
+        ba: {
+          mon: ["", "", "", "", "", "", ""],
+          tue: ["", "", "", "", "", "", ""],
+          wed: ["", "", "", "", "", "", ""],
+          thu: ["", "", "", "", "", "", ""],
+          fri: ["", "", "", "", "", "", ""],
+          sat: ["", "", "", "", "", "", ""]
+        },
+        bsc: {
+          mon: ["", "", "", "", "", "", ""],
+          tue: ["", "", "", "", "", "", ""],
+          wed: ["", "", "", "", "", "", ""],
+          thu: ["", "", "", "", "", "", ""],
+          fri: ["", "", "", "", "", "", ""],
+          sat: ["", "", "", "", "", "", ""]
+        }
+      },
+      "4th": {
+        bcom: {
+          mon: ["", "", "", "", "", "1114217 2114514", "0134214"],
+          tue: ["", "", "1114514", "2134214", "1204541", "2124436", ""],
+          wed: ["", "", "1124314", "", "1134417 2114116", "2204210", "1501529"],
+          thu: ["", "", "", "1204236 2204535", "1124417 2124314", "1114114", ""],
+          fri: ["", "", "", "2114236", "1134117", "1144435 2134110", "2144417"],
+          sat: ["", "", "2144314", "", "1124152", "1144310 2124152", ""]
+        },
+        ba: {
+          mon: ["0036134 0632406 1511427", "0400000 0700000 1217330 1313336", "0300000 1114237 1217241 1418536 0501128", "1612403 2622205 2323229 1418416 1511222 1016134", "0036220 0632106", "2428535 2729301", "0303429 2521233"],
+          tue: ["0700000 0400000", "1612402 0700030 1217227 1114323 1016320", "0709205 1313534 1114323 0207336 1511420 0237216", "0632106 0333530 0531436", "0104339 1313130 0207133 1418342 1511535 1016134", "0825141", "0700000 1114123 2428335"],
+          wed: ["0036234 0438427 0237330", "1114237 0303229 1217127 0408330 1511228", "0500000 0300000 0541142", "0602403 0303436 2227236 1418230 1511330 1016110", "2729205 1114237 2323329 1418436 1511120 2227143", "2803329 1803403", "0430000 0230000"],
+          thu: ["", "2622403 1313533 1217127 1418328 1016436", "1612202 1114137 2124238 1313129 1217236 1418200 1511130 1016220 2227116", "0036143 1632110 1333400 2237227", "0036435 1612103 0632206 1511443", "0700000 1114123 1313442 1418436 2428305 1016134", "2124123 1313220 1418234 2521135"],
+          fri: ["0331128 0036434", "0400000 0709220 1313427 1016234", "2124137 1313329 2227320 1418536 1311330", "2622106 2323329 1217127 1418430 1016307", "2124223 1313327 1418305 1511428 0006334", "0800000 0811434 0825120", "0300000 2124123 1418433 0408134"],
+          sat: ["0700000 1612103 1418220", "0202103 1217227 1114323 0006120", "1612203 2124323 1313229 1217127 1418235 2521528", "1016335 0237127 0438228", "0430000 1016136 0333420 0438227", "0800000 0811520", ""]
+        },
+        bsc: {
+          mon: ["", "1035219 0432142", "0101552", "0101552", "0333215 0101152", "0333215 2025319", "0101352"],
+          tue: ["", "", "0101152 1412222 2422143", "2323115 2025119", "2323115", "1111425 0035319 0333115", "0035319 0333115"],
+          wed: ["2224421", "0101552 2422222", "0101552 2422242", "2025219 2323115", "1111452 2025119 0333215", "0506228", "0101352 0333115"],
+          thu: ["", "0101351 0333315", "1111452 0234442 2333315 2025219 2422122 1412200", "0101152", "2323115 2025310", "2323115 1111425", "1111215"],
+          fri: ["", "1111451 0333315 1412222", "0101151 2422222", "0101151 2422122", "1111425 0234221 2422142", "1111215", "0131215"],
+          sat: ["", "0234210 0333315", "0101152 2422243", "1111215", "0035119", "0500000 0510041", "1111352"]
+        }
+      },
+      "5thx": {
+        bcom: {
+          mon: ["", "", "", "", "", "", ""],
+          tue: ["", "", "", "", "", "", ""],
+          wed: ["", "", "", "", "", "", ""],
+          thu: ["", "", "", "", "", "", ""],
+          fri: ["", "", "", "", "", "", ""],
+          sat: ["", "", "", "", "", "", ""]
+        },
+        ba: {
+          mon: ["", "", "", "", "", "", ""],
+          tue: ["", "", "", "", "", "", ""],
+          wed: ["", "", "", "", "", "", ""],
+          thu: ["", "", "", "", "", "", ""],
+          fri: ["", "", "", "", "", "", ""],
+          sat: ["", "", "", "", "", "", ""]
+        },
+        bsc: {
+          mon: ["", "", "", "", "", "", ""],
+          tue: ["", "", "", "", "", "", ""],
+          wed: ["", "", "", "", "", "", ""],
+          thu: ["", "", "", "", "", "", ""],
+          fri: ["", "", "", "", "", "", ""],
+          sat: ["", "", "", "", "", "", ""]
+        }
+      },
+      "6th": {
+        bcom: {
+          mon: ["", "", "", "", "0004436 0004216", "2004436", "1004436"],
+          tue: ["", "1004552", "", "1004516", "1004236", "1004152", "1004434"],
+          wed: ["", "", "", "1004316 2004152", "2004235", "2004120", ""],
+          thu: ["", "2004552", "2004510", "0004117", "1004236", "1004235 2004433", "2004352"],
+          fri: ["", "0004352", "0004516", "2004334", "0004316 2004510", "1004516", ""],
+          sat: ["", "", "2004116", "", "2004417", "", ""]
+        },
+        ba: {
+          mon: ["1719336 1114323 1313329", "1016433 1418435 1313229", "1511430 1313427 2026233 1016420 1612405 1217342 1418434 2729302", "1217227 1511530 2227333 1418235 1719302", "0541428 2026134 1114223", "1511228 0247241 1016134", "2124223"],
+          tue: ["1511528 2227227 1612103", "1418535 2729305 1612103 1313510", "2522542 1511228 1016302 1719344 1612403 2323327 1418135", "1511128 0541222 1114123 1016233 1612303 1719205 1217227 1418302 2124339 0458520", "2622403 1418407 1217327 1313229 2729201 1114223", "1016133 1418407 1313129 2323302", "2521333"],
+          wed: ["", "1114223 1217242 1612202", "1511328 1016434 1612403 1418200 1313527 1217333 1719202 2428135", "0301220 1313129 1418305 2729202", "1511228 2026433 1114123 2428307 2622402", "2124123 2227141", "2124123 1313436 2448442"],
+          thu: ["", "2521243 1114123 2124237 1418535 2729302", "1511444 2528143 1612103 2622305 2323425 1719201 2026134 1418341", "1511528 0501330 1016407 1313129 1114323 2124237 1612203 1217141 1719302 0xx5120", "1511128 1016202 1418244 1313533 2124323 1217227", "2521428 1114223 1418241 0303343", "2729202 1313329"],
+          fri: ["1114223", "2521533 1511428 1217341 1418207 1612205", "1719206 1016343 2026433 1612305 1217127 1418242 2622107", "1511522 1016233 1418542 2247341 1719305 1612103 1114123", "1313429 1418436 2247130 2124137 1719202 0xx5141", "1313329 1418141", "2428235"],
+          sat: ["1217130 1418327", "1217130 1719202 1418333", "1511330 2026334 1612306 2323520 2729236", "2521216 1114323 2124137 1612103 2622202 1313230 1016134 1410007", "1511530 1313129 1612205 2428135 1114323", "0303233", "0501233"]
+        },
+        bsc: {
+          mon: ["", "", "1214421", "1111325 2025310", "", "1111151", "0101551 1214121"],
+          tue: ["", "", "2005210 1111451", "1111451 2005310", "1111151 1214221 2005110", "1111151 2121425 1214221 2422222", "1214121 2025322"],
+          wed: ["", "2025210 1214221", "1214421 1111425 2005119", "2422143 1111425 2224422 1214221", "2121452 2323115", "1111351", ""],
+          thu: ["", "", "1111325 2121452 2005322", "1111325 1214421 2224222", "1111452 1214429 2005222 1412200", "1111151 1214221 2025222", "0101525 2422233 1214221 2224122"],
+          fri: ["", "2121451", "", "1111425 2322243 2025110", "1111151 2025119", "1214221 1111151 2025222", ""],
+          sat: ["2025122 1412242", "2025319 2422235", "1214221 2025119", "1214421", "1214421 2025322", "", ""]
+        }
+      },
+      "7thx": {
+        bcom: {
+          mon: ["", "", "", "", "", "", ""],
+          tue: ["", "", "", "", "", "", ""],
+          wed: ["", "", "", "", "", "", ""],
+          thu: ["", "", "", "", "", "", ""],
+          fri: ["", "", "", "", "", "", ""],
+          sat: ["", "", "", "", "", "", ""]
+        },
+        ba: {
+          mon: ["", "", "", "", "", "", ""],
+          tue: ["", "", "", "", "", "", ""],
+          wed: ["", "", "", "", "", "", ""],
+          thu: ["", "", "", "", "", "", ""],
+          fri: ["", "", "", "", "", "", ""],
+          sat: ["", "", "", "", "", "", ""]
+        },
+        bsc: {
+          mon: ["", "", "", "", "", "", ""],
+          tue: ["", "", "", "", "", "", ""],
+          wed: ["", "", "", "", "", "", ""],
+          thu: ["", "", "", "", "", "", ""],
+          fri: ["", "", "", "", "", "", ""],
+          sat: ["", "", "", "", "", "", ""]
+        }
+      },
+      "8thx": {
+        bcom: {
+          mon: ["", "", "", "", "", "", ""],
+          tue: ["", "", "", "", "", "", ""],
+          wed: ["", "", "", "", "", "", ""],
+          thu: ["", "", "", "", "", "", ""],
+          fri: ["", "", "", "", "", "", ""],
+          sat: ["", "", "", "", "", "", ""]
+        },
+        ba: {
+          mon: ["", "", "", "", "", "", ""],
+          tue: ["", "", "", "", "", "", ""],
+          wed: ["", "", "", "", "", "", ""],
+          thu: ["", "", "", "", "", "", ""],
+          fri: ["", "", "", "", "", "", ""],
+          sat: ["", "", "", "", "", "", ""]
+        },
+        bsc: {
+          mon: ["", "", "", "", "", "", ""],
+          tue: ["", "", "", "", "", "", ""],
+          wed: ["", "", "", "", "", "", ""],
+          thu: ["", "", "", "", "", "", ""],
+          fri: ["", "", "", "", "", "", ""],
+          sat: ["", "", "", "", "", "", ""]
+        }
+      }
+    };
+    
+    
+    
+    
+    function prefix_adder(schedule) {
+      const result = {};
+      const streamMap = { bcom: 1, ba: 2, bsc: 3 };
+      const semesterMap = { "1st": 1, "2nd": 2, "3rd": 3, "4th": 4, "5th": 5, "6th": 6, "7th": 7, "8th": 8 };
+      
+      for (const [semester, streams] of Object.entries(schedule)) {
+        const semDigit = semesterMap[semester];
+        result[semester] = {};
+        
+        for (const [stream, days] of Object.entries(streams)) {
+          const streamDigit = streamMap[stream];
+          result[semester][stream] = {};
+          
+          for (const [day, periods] of Object.entries(days)) {
+            result[semester][stream][day] = periods.map(period => {
+              if (!period.trim()) return "";
+              
+              // Split multiple codes by space
+              const codes = period.split(' ');
+              const transformedCodes = codes.map(code => {
+                // Extract first 3 digits
+                const first3 = code.slice(0, 3);
+                // Extract middle 2 digits
+                const middle2 = code.slice(3, 5);
+                // Extract last 2 digits
+                const last2 = code.slice(5, 7);
+                
+                // Combine: semDigit + streamDigit + first3 (total 5 digits)
+                // Then streamDigit + middle2 (total 3 digits)
+                // Then last2 (2 digits)
+                return `${semDigit}${streamDigit}${first3}${streamDigit}${middle2}${last2}`;
+              });
+              
+              return transformedCodes.join(' ');
+            });
+          }
+        }
+      }
+      
+      return result;
+    }
+    
+    
+    const slots = [
+      "10AM—11AM", "11AM—12PM", "12PM—1PM", "1PM—2PM", "2PM—3PM", "3PM—4PM", "4PM—5PM"
+    ];
+    
+    function processScheduleData(transformedData) {
+      const result = {};
+      
+      // First pass: process all data normally
+      for (const [semester, streams] of Object.entries(transformedData)) {
+        result[semester] = {};
+        
+        for (const [stream, days] of Object.entries(streams)) {
+          result[semester][stream] = {};
+          
+          for (const [day, periods] of Object.entries(days)) {
+            result[semester][stream][day] = periods.map((periodStr, time) => {
+              if (!periodStr || typeof periodStr !== 'string' || !periodStr.trim()) return "";
+              
+              const codes = periodStr.split(' ').filter(code => code.trim().length > 0);
+              if (codes.length === 0) return "";
+              
+              const processedCodes = codes.map(code => {
+                if (code.length !== 10) {
+                  return `Invalid code: ${code}`;
+                }
+                
+                const subjectCode = code.slice(0, 5);
+                const teacherCode = code.slice(5, 8);
+                const roomCode = code.slice(8, 10);
+                
+                const subject = getSubjectName(subjectCode);
+                const teacher = getTeacherName(teacherCode) || '';
+                const room = ROOM[parseInt(roomCode)];
+                const isTeacher = teacher ? '&nbsp&nbsp&nbsp &#128100; ' : '';
+                const isRoom = room ? 'at ' : '';
+                const timeStamp = (slots[time].split('—')[0]).replace(/(\d+)(AM|PM)/i, '$1 $2');
+                
+                return `<p><strong>${subject}</strong> <strong>${isTeacher}${teacher}</strong><strong>${isRoom}${room} on <em> &#x23F0; ${timeStamp}</em></strong></p>`;
+              });
+              
+              return processedCodes.join('');
+            });
+          }
+        }
+      }
+      
+      // Second pass: handle special cases
+      for (const [semester, streams] of Object.entries(transformedData)) {
+        for (const [stream, days] of Object.entries(streams)) {
+          for (const [day, periods] of Object.entries(days)) {
+            periods.forEach((periodStr, time) => {
+              if (!periodStr || typeof periodStr !== 'string' || !periodStr.trim()) return;
+              
+              const codes = periodStr.split(' ').filter(code => code.trim().length > 0);
+              if (codes.length === 0) return;
+              
+              codes.forEach(code => {
+                if (code.length !== 10) return;
+                
+                const subjectCode = code.slice(0, 5);
+                const teacherCode = code.slice(5, 8);
+                const roomCode = code.slice(8, 10);
+                
+                const subject = getSubjectName(subjectCode);
+                const teacher = getTeacherName(teacherCode) || '';
+                const room = ROOM[parseInt(roomCode)];
+                const isTeacher = teacher ? '&nbsp&nbsp&nbsp &#128100; ' : '';
+                const isRoom = room ? 'at ' : '';
+                const timeStamp = (slots[time].split('—')[0]).replace(/(\d+)(AM|PM)/i, '$1 $2');
+                
+                // Inject special cases into other streams (ba or bsc)
+                if (subjectCode[1] === "3" && subjectCode[3] === "4") {
+                  if (!result[semester]["ba"]) result[semester]["ba"] = {};
+                  if (!result[semester]["ba"][day]) result[semester]["ba"][day] = Array(periods.length).fill("");
+                  result[semester]["ba"][day][time] += `<p><strong>${subject}</strong> <strong>${isTeacher}${teacher}</strong><strong>${isRoom}${room} on <em> &#x23F0; ${timeStamp}</em></strong></p>`;
+                } else if (subjectCode[1] === "2" && subjectCode[3] === "1") {
+                  if (!result[semester]["bsc"]) result[semester]["bsc"] = {};
+                  if (!result[semester]["bsc"][day]) result[semester]["bsc"][day] = Array(periods.length).fill("");
+                  result[semester]["bsc"][day][time] += `<p><strong>${subject}</strong> <strong>${isTeacher}${teacher}</strong><strong>${isRoom}${room} on <em> &#x23F0; ${timeStamp}</em></strong></p>`;
+                }
+              });
+            });
+          }
+        }
+      }
+      
+      return result;
+    }
+    
+    let latestGlowingRow = null;
+    const tableData = processScheduleData(prefix_adder(scheduleData));
+    
+    const semesterTabs = document.querySelectorAll("#semesterTabs .tab");
+    const courseTabs = document.querySelectorAll("#courseTabs .tab");
+    const dayTabs = document.querySelectorAll("#dayTabs .tab");
+    let activeDayTab = undefined;
+    
+    function setActiveTab(tabs, activeData) {
+      if (!tabs || !activeData) return; // যদি tabs বা activeData না থাকে
+      tabs.forEach(tab => {
+        const { semester, course, day } = tab.dataset || {};
+        if (semester === activeData || course === activeData || day === activeData) {
+          tab.classList.add("active");
+          if (day) activeDayTab = day;
+        } else {
+          tab.classList.remove("active");
+        }
+      });
+    }
+    
+    function updateContent(isClickedOnSemOrCourseTabs = false) {
+      const student = JSON.parse(localStorage.getItem("student"));
+      if (!student) return;
+      const activeSemester = document.querySelector("#semesterTabs .tab.active").dataset.semester;
+      const activeCourse = document.querySelector("#courseTabs .tab.active").dataset.course;
+      const Day = document.querySelector("#dayTabs .tab.active").dataset.day;
+      
+      const daysData = tableData[activeSemester]?.[activeCourse] || ["", "", "", "", "", ""];
+      const contentArea = document.getElementById("contentArea");
+      if (isClickedOnSemOrCourseTabs) {
+        contentArea.classList.remove('content-animate');
+        // Force reflow to ensure the class removal is processed and the animation can be re-triggered
+        void contentArea.offsetWidth;
+      }
+      contentArea.innerHTML = ""; // Clear previous content
+      if (!daysData) return;
+      
+      Object.keys(daysData).forEach(day => {
+        const timeData = daysData[day];
+        const tbody = document.createElement("tbody");
+        tbody.className = "slide";
+        tbody.id = `${day}-content`;
+        
+        if ((!timeData || !Array.isArray(timeData)) || Day !== day) {
+          tbody.innerHTML = `<tr><td style="text-align:center; font-size: 200%;"> No Classes Scheduled! </td></tr>`;
+        } else {
+          let count = 0;
+          const validCount = timeData.filter(Boolean).length;
+          tbody.innerHTML = timeData
+            .map(data => data ? `<tr><td>${data}</td></tr>${++count < validCount ? `<hr>` : ''}` : '')
+            .join('');
+        }
+        
+        contentArea.appendChild(tbody);
+      });
+      if (isClickedOnSemOrCourseTabs) contentArea.classList.add('content-animate');
+      highlightCurrentSlot();
+    }
+    
+    const forceToGlow = (row) => {
+      if (activeDay !== defaultDay) return;
+      if (!row) return;
+      const rect = row.getBoundingClientRect();
+      const isVisible = rect.top >= window.innerHeight * 0.5 && rect.bottom <= window.innerHeight;
+      if (!isVisible) row.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+    
+    semesterTabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        setActiveTab(semesterTabs, tab.dataset.semester);
+        updateContent(true);
+        forceToGlow(latestGlowingRow);
+      });
+    });
+    
+    courseTabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        setActiveTab(courseTabs, tab.dataset.course);
+        updateContent(true);
+        forceToGlow(latestGlowingRow);
+      });
+    });
+    
+    dayTabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        setActiveTab(dayTabs, tab.dataset.day);
+        updateContent();
+        forceToGlow(latestGlowingRow);
+      });
+    });
+    
+    const currentDay = new Date().toLocaleString("en-us", { weekday: "short" }).toLowerCase();
+    const dayMapping = {
+      sun: "mon",
+      mon: "mon",
+      tue: "tue",
+      wed: "wed",
+      thu: "thu",
+      fri: "fri",
+      sat: "sat"
+    };
+    
+    const defaultDay = dayMapping[currentDay];
+    setActiveTab(dayTabs, defaultDay);
+    const activeDay = document.querySelector("#dayTabs .tab.active").dataset.day;
+    document.addEventListener('DOMContentLoaded', () => {
+      const table = document.querySelector('#contentArea');
+      const dayTabs = document.querySelectorAll('#dayTabs .tab');
+      const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+      const $currentIndex = days.indexOf(defaultDay);
+      let currentIndex = days.indexOf(defaultDay);
+      let startX = 0;
+      
+      function updateSlider() {
+        const shift = -(currentIndex * 100);
+        table.style.transform = `translateX(${shift}%)`;
+        highlightDayTab(days[currentIndex]);
+        updateContent();
+        highlightCurrentSlot();
+      }
+      
+      function highlightDayTab(day) {
+        dayTabs.forEach(tab => {
+          //tab.classList.toggle('active', tab.dataset.day === day);
+          setActiveTab(dayTabs, day);
+        });
+      }
+      
+      dayTabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => {
+          currentIndex = index;
+          updateSlider();
+        });
+      });
+      
+      table.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+      }, { passive: true });
+      
+      table.addEventListener('touchend', (e) => {
+        const endX = e.changedTouches[0].clientX;
+        const diff = startX - endX;
+        
+        if (Math.abs(diff) > 75) {
+          if (diff > 0 && currentIndex < days.length - 1) {
+            currentIndex++;
+          } else if (diff < 0 && currentIndex > 0) {
+            currentIndex--;
+          }
+          updateSlider();
+        }
+      });
+      updateSlider();
+      updateStudentPromptUI();
+    });
+    
+    
+    function isCurrentTimeInSlot(slot) {
+      const [startStr, endStr] = slot.split("—").map(s => s.trim().toUpperCase());
+      
+      const parseTime = (timeStr) => {
+        const [hourMin, meridian] = [timeStr.slice(0, -2).trim(), timeStr.slice(-2)];
+        let [hour, minute] = hourMin.split(":").map(Number);
+        if (isNaN(minute)) minute = 0;
+        
+        if (meridian === "PM" && hour !== 12) hour += 12;
+        if (meridian === "AM" && hour === 12) hour = 0;
+        
+        const now = new Date();
+        return new Date(now.getFullYear(), now.getMonth(), now.getDate(), hour, minute, 0).getTime();
+      };
+      
+      const start = parseTime(startStr);
+      const end = parseTime(endStr);
+      const now = new Date().getTime();
+      
+      return now >= start && now <= end;
+    }
+    
+    
+    function highlightCurrentSlot() {
+      const hasStudent = localStorage.getItem("student");
+      if (!hasStudent) return;
+      const currentDay = new Date().toLocaleString("en-us", { weekday: "short" }).toLowerCase();
+      const activeDay = document.querySelector("#dayTabs .tab.active")?.dataset.day;
+      if (currentDay !== activeDay) return;
+      
+      const activeSemester = document.querySelector("#semesterTabs .tab.active")?.dataset.semester;
+      const activeCourse = document.querySelector("#courseTabs .tab.active")?.dataset.course;
+      const timeData = tableData[activeSemester]?.[activeCourse]?.[activeDay];
+      
+      if (!timeData || !Array.isArray(timeData)) return;
+      const day = document.getElementById(`${activeDay}-content`);
+      
+      slots.forEach((slot, index) => {
+        const hasData = typeof timeData[index] === "string" && timeData[index].trim();
+        
+        if (isCurrentTimeInSlot(slot) && hasData) {
+          const slotStartTime = slot.split("—")[0]; // e.g., "11AM"
+          const slotTimeRegex = new RegExp(`\\b${slotStartTime.replace(/(\d+)(AM|PM)/, '$1 ?$2')}\\b`, 'i');
+          
+          day.querySelectorAll("p").forEach(p => {
+            const text = p.textContent;
+            if (slotTimeRegex.test(text)) {
+              latestGlowingRow = p;
+              const em = p.querySelectorAll("em");
+              em.forEach(e => {
+                e.classList.add("shake");
+              });
+              const teacherName = p.querySelectorAll("strong:nth-child(2)");
+              teacherName.forEach(e => {
+                e.classList.add("high");
+              });
+            }
+          });
+        }
+      });
+    }
+    
+    
+    setInterval(highlightCurrentSlot, 1000); // Update every second to check the time
+    function updateStudentPromptUI() {
+      const hasStudent = localStorage.getItem("student");
+      [...document.querySelectorAll('.hidden')].forEach(el => el.style.display = hasStudent ? 'flex' : 'none');
+      document.getElementById("studentPromptBox").style.display = hasStudent ? "none" : "block";
+      document.getElementById("edit").style.display = hasStudent ? "block" : "none";
+      if (hasStudent) {
+        const stdDetails = JSON.parse(localStorage.getItem("student"));
+        const sems = Object.fromEntries(
+          Array.from({ length: 8 }, (_, i) => {
+            const n = i + 1;
+            const suffix = `<sup>${['st','nd','rd'][n - 1] || 'th'}</sup>`;
+            return [n, `${n}${suffix} SEM`];
+          })
+        );
+        const deptNames = { bcom: 'B.Com.', ba: 'B.A.', bsc: 'B.Sc.' };
+        const [semKey, deptKey] = Object.values(stdDetails).slice(0, 2);
+        const display = `${sems[semKey]} - ${deptNames[deptKey]}`;
+        document.querySelector('#edit bdi').innerHTML = display;
+      }
+    }
+    
+    function activateStudentTabs() {
+      const student = JSON.parse(localStorage.getItem("student"));
+      if (!student) return;
+      const suffixMap = ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th"];
+      const semesterLabel = suffixMap[parseInt(student.semester) - 1];
+      const departmentKey = student.department.toLowerCase();
+      setActiveTab(semesterTabs, semesterLabel);
+      setActiveTab(courseTabs, departmentKey);
+      setActiveTab(dayTabs, defaultDay);
+      updateContent(true);
+    }
+    
+    document.getElementById("studentForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const semester = document.getElementById("semesterSelect").value;
+      const dept = document.getElementById("departmentSelect")?.value;
+      if (semester && dept) {
+        localStorage.setItem("student", JSON.stringify({ semester, department: dept }));
+        updateStudentPromptUI();
+        activateStudentTabs();
+      }
+    });
+    
+    document.getElementById("edit").addEventListener("click", () => {
+      localStorage.removeItem("student");
+      
+      updateStudentPromptUI();
+    });
+    
+    updateStudentPromptUI();
+    if (localStorage.getItem("student")) {
+      activateStudentTabs();
+    }
+  </script>
+</body>
+
+</html>
