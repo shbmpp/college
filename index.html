@@ -1334,7 +1334,9 @@
       tab.addEventListener("click", () => {
         setActiveTab(semesterTabs, tab.dataset.semester);
         updateContent(true);
-        forceToGlow(latestGlowingRow);
+        setTimeout(() => {
+          forceToGlow(latestGlowingRow);
+        }, 500); // 500ms delay
       });
     });
     
@@ -1342,7 +1344,9 @@
       tab.addEventListener("click", () => {
         setActiveTab(courseTabs, tab.dataset.course);
         updateContent(true);
-        forceToGlow(latestGlowingRow);
+        setTimeout(() => {
+          forceToGlow(latestGlowingRow);
+        }, 500); // 500ms delay
       });
     });
     
@@ -1350,9 +1354,13 @@
       tab.addEventListener("click", () => {
         setActiveTab(dayTabs, tab.dataset.day);
         updateContent();
-        forceToGlow(latestGlowingRow);
+        setTimeout(() => {
+          forceToGlow(latestGlowingRow);
+        }, 500); // 500ms delay
       });
     });
+    
+    
     
     const currentDay = new Date().toLocaleString("en-us", { weekday: "short" }).toLowerCase();
     const dayMapping = {
@@ -1386,8 +1394,10 @@
       
       function highlightDayTab(day) {
         dayTabs.forEach(tab => {
-          //tab.classList.toggle('active', tab.dataset.day === day);
           setActiveTab(dayTabs, day);
+          setTimeout(() => {
+            forceToGlow(latestGlowingRow);
+          }, 500); // 500ms delay
         });
       }
       
