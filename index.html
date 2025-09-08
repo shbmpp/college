@@ -1276,51 +1276,56 @@
     }
     
     function updateContent(isClickedOnSemOrCourseTabs = false) {
-      const student = JSON.parse(localStorage.getItem("student"));
-      if (!student) return;
-      const activeSemester = document.querySelector("#semesterTabs .tab.active").dataset.semester;
-      const activeCourse = document.querySelector("#courseTabs .tab.active").dataset.course;
-      const Day = document.querySelector("#dayTabs .tab.active").dataset.day;
-      
-      const isEmpty = Object.values(scheduleData[activeSemester] || {}).every(dept =>
-        Object.values(dept).every(day =>
-          Array.isArray(day) && day.length === 7 && day.every(p => p.trim() === "")
-        )
-      );
-      
-      const daysData = tableData[activeSemester]?.[activeCourse] || ["", "", "", "", "", ""];
-      const contentArea = document.getElementById("contentArea");
-      if (isClickedOnSemOrCourseTabs) {
-        contentArea.classList.remove('content-animate');
-        // Force reflow to ensure the class removal is processed and the animation can be re-triggered
-        void contentArea.offsetWidth;
-      }
-      contentArea.innerHTML = ""; // Clear previous content
-      if (!daysData) return;
-      
-      Object.keys(daysData).forEach(day => {
-        const timeData = daysData[day];
-        const tbody = document.createElement("tbody");
-        tbody.className = "slide";
-        tbody.id = `${day}-content`;
-        
-        if (!timeData || !Array.isArray(timeData) || isEmpty) {
-          tbody.innerHTML = `<tr><td style="text-align:center; font-size: 200%; width: 95vw; height: 30vh"> No Classes Scheduled!! </td></tr>`;
-        } else if (Day !== day) {
-          tbody.innerHTML = ''; // `<tr><td style="text-align:center; font-size: 200%;"> </td></tr>`;
-        } else {
-          let count = 0;
-          const validCount = timeData.filter(Boolean).length;
-          tbody.innerHTML = timeData
-            .map(data => data ? `<tr><td>${data}</td></tr>${++count < validCount ? `<hr>` : ''}` : '')
-            .join('');
-        }
-        
-        contentArea.appendChild(tbody);
-      });
-      if (isClickedOnSemOrCourseTabs) contentArea.classList.add('content-animate');
-      highlightCurrentSlot();
+  const student = JSON.parse(localStorage.getItem("student"));
+  if (!student) return;
+
+  const activeSemester = document.querySelector("#semesterTabs .tab.active").dataset.semester;
+  const activeCourse = document.querySelector("#courseTabs .tab.active").dataset.course;
+  const Day = document.querySelector("#dayTabs .tab.active").dataset.day;
+
+  const daysData = tableData[activeSemester]?.[activeCourse] || {};
+  const contentArea = document.getElementById("contentArea");
+
+  if (isClickedOnSemOrCourseTabs) {
+    contentArea.classList.remove("content-animate");
+    void contentArea.offsetWidth; // reflow
+  }
+
+  contentArea.innerHTML = ""; // Clear previous content
+  if (!daysData) return;
+
+  Object.keys(daysData).forEach(day => {
+    const timeData = daysData[day];
+    const tbody = document.createElement("tbody");
+    tbody.className = "slide";
+    tbody.id = `${day}-content`;
+
+    // 🔎 এখানে day-level চেক
+    const isDayEmpty =
+      !timeData ||
+      !Array.isArray(timeData) ||
+      timeData.length === 0 ||
+      timeData.every(p => !p || p.trim() === "");
+
+    if (isDayEmpty) {
+      tbody.innerHTML = `<tr><td style="text-align:center; font-size: 200%; width: 95vw; height: 30vh"> No Classes Scheduled!! </td></tr>`;
+    } else if (Day !== day) {
+      tbody.innerHTML = "";
+    } else {
+      let count = 0;
+      const validCount = timeData.filter(Boolean).length;
+      tbody.innerHTML = timeData
+        .map(data => data ? `<tr><td>${data}</td></tr>${++count < validCount ? `<hr>` : ''}` : "")
+        .join("");
     }
+
+    contentArea.appendChild(tbody);
+  });
+
+  if (isClickedOnSemOrCourseTabs) contentArea.classList.add("content-animate");
+  highlightCurrentSlot();
+}
+    
     
     const forceToGlow = (row) => {
       if (activeDay !== defaultDay) return;
