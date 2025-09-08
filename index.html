@@ -1011,8 +1011,8 @@
     // Fetch API & Update DB
     async function fetchAndStore() {
       try {
-        //const response = await fetch("https://raw.githubusercontent.com/shbmpp/college/refs/heads/main/bccr_classes.json");
-        const response = await fetch("./bccr_classes.json");
+        const response = await fetch("https://raw.githubusercontent.com/shbmpp/college/refs/heads/main/bccr_classes.json");
+        //const response = await fetch("./bccr_classes.json");
         const data = await response.json();
         await saveData(data);
         scheduleData = data;
