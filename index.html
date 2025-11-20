@@ -1232,7 +1232,7 @@
                 const subject = getSubjectName(subjectCode);
                 const teacher = getTeacherName(teacherCode) || "";
                 const room = ROOM[parseInt(roomCode)] || '';
-                const isTeacher = teacher ? "&nbsp&nbsp&nbsp &#128100; " : "";
+                const isTeacher = teacher ? ` &nbsp&nbsp&nbsp <i class="fa-solid fa-user-tie"></i> ` : "";
                 const isRoom = room ? "at " : "";
                 const timeStamp = (slots[time].split("—")[0]).replace(/(\d+)(AM|PM)/i, "$1 $2");
 
