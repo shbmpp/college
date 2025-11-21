@@ -13,10 +13,10 @@
       --unit: calc(1vh + 3vw);
       --border: 0.4vh;
       --font: clamp(0.9em, 1.5vw, 1.2em);
-      --col1: #B1D8B7;
-      --col2: #94C973;
-      --col3: #76B947;
-      --col4: #2F5233;
+      --col1: #FDE7B3;
+      --col2: #FFC50F;
+      --col3: #63A361;
+      --col4: #5B532C;
       
     }
     
@@ -108,7 +108,7 @@
     .tab {
       padding: 1% 3%;
       margin: 0%;
-      border: 2px solid var(--col4);
+      border: 2.5px dashed var(--col4);
       box-sizing: border-box;
       border-radius: 20px;
       background-color: var(--col2);
@@ -122,11 +122,8 @@
       background-color: var(--col4);
       color: var(--col1);
       box-shadow: 0 1% 10px rgba(0, 0, 0, 0.2);
-      font-size: 55%;
       border: 3px double var(--col3);
-      border-radius: 20px;
       position: relative;
-      top: -2px;
     }
     
     /* ==== Tunable design tokens ==== */
@@ -1335,7 +1332,7 @@
       const viewportHeight = window.innerHeight;
       
       // Element যদি viewport-এর বাইরে থাকে
-      const completelyAbove = rect.bottom <= 0;
+      const completelyAbove = rect.bottom <= 200;
       const completelyBelow = rect.top >= viewportHeight;
       
       if (completelyAbove || completelyBelow) {
