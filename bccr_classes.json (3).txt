@@ -1,0 +1,210 @@
+{
+  "1st": {
+    "bcom": {
+      "mon": ["", "2ENDCSECRKS14", "1FACMPD17", "2MPPMPD14", "1FACMDM17 2MICD14", "", "1CONSKR17"],
+      "tue": ["", "", "", "1MPPMPD17", "1envsak16", "1facmsg36 2mppmpd35", "engcas20"],
+      "wed": ["", "2fagmrks14", "1endcmd17", "1facmrks17 2fagmsg14", "1mppmmd17 2mppmrks14", "2conskr20", ""],
+      "thu": ["", "1endcrks17", "2fagmmd14", "1mppmrks17 2endcpd14", "1facmpd17 2mppmmd14", "2envsak17", "2fagmdm10"],
+      "fri": ["1endcrks17", "", "1mppmpd17 2endcrks14", "1facmmd17", "micd17 2mppmdm14", "1endcpd41 2endcmd36", ""],
+      "sat": ["", "1endcmd17", "1facmsg17 2endcmd14", "2fagmsg14", "1mppmdm17", "", ""]
+    },
+    "ba": {
+      "mon": ["1engm mengmn medcgg06 2mhissmb14 2mplsadm20", "mpls msan 2meng 1bgnmasd28 1geompb23 1edcmss01 1engmsps29 1hismek34", "2mbgn meng 1mbgnnm28 1geompb23 sanmasr01 1edcmsns02 1hismmd20 1plsmdm35", "meng medc mBGNSECPC28 1geomas23 2mengpkb29 1hismek33", "BGNdASD36 sandasr02 edcd06 phidmd30", "1engcsps20", "1consdm20 2conskr17"],
+      "tue": ["msan mpls 1sanmasr30 1hismhb34 1bgnmpc28 1phimsecmsc27", "edcmgg01 2mhishb20 phimsecbr27 2mplsadm35", "geom mphi 1geomlcp23 2mgeoas38 1sanmam02 1edcmss01 1engmas41 1hismsmb34 mphimac16 1plsmkr35", "phim 2mbgnpc28 2msanasr02 medcgg07 2mengas29 1phimmnmd16 2mplssec20", "1envsaks14", "mphi mbgnnm34 1engmakp29 1phimsecmd33", "2engcss35"],
+      "wed": ["MPLS MENG MSAN", "MPLS MENG MSAN 1sanmam01 1engmsps35 1phimmsc27 2mplsseckr36", "mbgn meng 2mbgntm30 1edcmsns01 1engmas29 1plsmdm35", "meng medc 1bgnmsectm29 2medcsns06 1hismmd34 1phimbr10 1plsmdd35", "mhis 1mbgnnm30 1engmpkb28 1sanmam01 2mhis20 1plsmpks35", "conspks17", "meng medc"],
+      "thu": ["msan mpls 1plsmadm35", "medc 1geompb23 1sanmam42 1hismhb34 1phimbr27 1plsmkr35", "mgeo mphi bgnmsecsm35 2mgeopb39 1sanmam01 1edcmggnb6 1engmss29 1hismmd36 1phimmd33 2mplssecadm20 1plsmdm", "mgeo mphi 1bgnmtm30 msanasr02 1medcgg06 2mengss36 1mphimnmsc41 2mplspks03", "bgndpc20 sandasr01 edcdgg07 engdpkb35 hisdsmb34 phidbr30", "2envsaks34", "mgeo mbgn meng 2mbgnasd29 2mgeoas37"],
+      "fri": ["meng medc msanam30", "mpls meng msan 1bgnmtm28 1engmsps29 1sanmasr02 1edcmss01 1phimmd33", "mbgn meng 2mbgnsecsm20 1sanmam02 1hismmd34 1phimsecmsc33 1plsmadm35", "1bgnmsecpc28 1sanmam02 1geomas23 1edcmsns01 1plsmdm35", "mpls meng msan 1bgnmasd28 1engmss35 1geomlcp23 1plsmkr35 2mplspks20", "edcdss42 phidmsc35", "geom mphi"],
+      "sat": ["msan mpls 1bgnmsm28 1geomlcp23 1plsmpks33", "2medc 1sanmam01 1edcmss02 1hismhb34 1phimsecmsc27 1plsmpks33", "mgeo mphi 1mbgnnm28 1engmpkb29 1geompb23 2mgeolcp37 1edcmsns01 2mhishb20 1phimbr41", "msan mpls msanam02 medcss06 2mengsps29 2mphimnbr41", "mgeo meng mbgn 2mbgnasd30 engdas35", "sandam01", "msan 1engmsps35"]
+    },
+    "bsc": {
+      "mon": ["", "1ecomtm22", "2mecosrb30 1ecomtm22 2mphsmks10 1mthmpk21", "1cmsmsecum52 2meltak15 2mphssecmks22", "cmsdajr51 phsdmks43 eltdak15", "engcpkb35", "consdm20"],
+      "tue": ["", "", "1mmthmnms21 2mphsss22 phsdmks10", "cmsmskp15 1mecotm42", "cmsmskp15", "1cmsmsecgd52 2meltskp15 2mphsmks19 1mthmms21", "2mphsak19 eltdss15"],
+      "wed": ["2mphsss22 1mmthmnpk21", "1cmsmsecrs52 1ecomtm22", "1cmsmsecajr52 2mphssecss22 2meltak15 mecosrb43 1mthmpk21", "1cmsmsecajr52 2mphsak22 1mthmms21", "1mthmms21 2meltss15", "conskr20", "1mmthrk21"],
+      "thu": ["2mphsmks21", "2mphsmks21 1ecomtm22", "phsdak19 1ecomsrb22 1mthmms41", "1cmsmsecrs52 mecotm27 2mphssecss19 1mthmpk21", "1cmsmsecajr52 1mthmms22", "envsss10", "1cmsmsecgd52"],
+      "fri": ["2mphsak22", "1mmthmnms21 1ecomsrb22 2mphsss19", "mcmsrs52 ecomsrb27 2mphssecak19 1mthmms21", "mcmsskp15 2mphssecss19", "mcmsrs52", "mcmsum52", ""],
+      "sat": ["ecomsrb17", "1mmthmnpk21 1mthmms22", "1cmsmsecajr51 1mthmpk21 2mphsss22", "1ecomsrb30 2mphsmks19 1mmthmnms21", "2mphsss19", "2meltsecskp15", "mcmsskp15 1mmthmnrk21"]
+    }
+  },
+  "2nd": {
+    "bcom": {
+      "mon": ["", "", "", "", "", "", ""],
+      "tue": ["", "", "", "", "", "", ""],
+      "wed": ["", "", "", "", "", "", ""],
+      "thu": ["", "", "", "", "", "", ""],
+      "fri": ["", "", "", "", "", "", ""],
+      "sat": ["", "", "", "", "", "", ""]
+    },
+    "ba": {
+      "mon": ["", "", "", "", "", "", ""],
+      "tue": ["", "", "", "", "", "", ""],
+      "wed": ["", "", "", "", "", "", ""],
+      "thu": ["", "", "", "", "", "", ""],
+      "fri": ["", "", "", "", "", "", ""],
+      "sat": ["", "", "", "", "", "", ""]
+    },
+    "bsc": {
+      "mon": ["", "", "", "", "", "", ""],
+      "tue": ["", "", "", "", "", "", ""],
+      "wed": ["", "", "", "", "", "", ""],
+      "thu": ["", "", "", "", "", "", ""],
+      "fri": ["", "", "", "", "", "", ""],
+      "sat": ["", "", "", "", "", "", ""]
+    }
+  },
+  "3rd": {
+    "bcom": {
+      "mon": ["", "", "", "cacmrks17", "", "mmktpd10", ""],
+      "tue": ["", "", "", "lhinaks20", "mmktrks17", "cacmdm41", "dtcmsg16"],
+      "wed": ["", "", "mmktrks14", "cacmmd16", "dtcmsg16", "lbensm36 alenas29", "2dtcmdm10 1cadcsecajr52"],
+      "thu": ["", "", "dtcmpd17", "cacmmd10", "cacmrks41", "mmktpd16", ""],
+      "fri": ["", "cadcsectm52", "cadcsecmd52", "cacmpd17", "1ieedtm17 2ieedsrb20", "", "mmktdm34"],
+      "sat": ["", "2cadcsecajr52", "", "cacmmd16", "dtcmmd16", "mmktdm36", "1dtcmdm36"]
+    },
+    "ba": {
+      "mon": ["medc mhis 1hismek34 1bgnmpc28", "mpls msanasr02 2mplsadm35", "mgeo mphi 1bgnmtm27 1edcmss02 1engmsps29 1hismsmb34 1plsmkr16 phimmd41", "mbgnmnnm41 mengmnsps35 mhismnsmb34", "mgeo bgnm meng 1mbgnnm41 2mgeoas23 1engmss27 1hismmd34", "mphi 1geomas23 1phimbr27 2lbenasd29", ""],
+      "tue": ["medcmnss06 mphimnbr29", "mpls meng msan 2msanasr33 1engmas29 1hismmd34", "mbgn meng 2mbgnasd20 1bgnmsm27 1engmakp29 1plsmpks05", "meng medc 1bgnmasd27 1geompb39 1engmss30 1plsmpks27", "hism 1bgnmtm28 1geompb39 1edcmss02 1engmpkb30 2mhissmb34", "2alenss42", "meng mpls 1mbgnnm35 msanam02 1geomlcp23 1hismsmb34 2mplspks17"],
+      "wed": ["mbgn meng 1hismmd34 1mbgnnm30", "medc mhis 1geomas23 1engmpkb29 1hismmnsmb34 1phimbr42", "mpls msan meng 1bgnmsm33 1engmss41 2msanam03 1hismsmb34 1mphimsc10 1mplspks30", "medcmngg02 2mengsecss44 mhismnek43 2mplsmnkr07", "mphi 1bgnmtm28 1engmsps36 1geomas23 2mecosrb27 1mplsdm7", "sandam1 edcdgg7 engdss33 hisdsmb34 phidbr22 plsddm41", ""],
+      "thu": ["mhismnhb34", "mpls meng msan 1engmas43 2msanasr43 1edcmgg6 1hismsmb30 2mhisek33 1phimmsc41 mplssecadm20", "bgnm meng 2mbgnnm5 1geomlcp37 1edcmsns2 1hismhb34 1phimbr10 1plsmkr7", "meng medc 1bgnmpc35 1geompb23 medcss7 1hismmd34 1phimmd33 2mhishb42 1plsmdm28", "geom phim 1bgnmasd28 1geomlcp37 2mgeopb39 1edcmsns3 1engmakp29 2mphimd10 1plsmkr42", "1alensps29", "bgnm meng mgeo 2bgnmsm33 1geomlcp23 1plsmpks27"],
+      "fri": ["medc mhis 1medcmnsns3 1phimsecmd10 1engmsps29", "edcm hism 1bgnmpc30 1geomas37 2mhismnhb20 1phimmsc10 1plsmadm35", "geom phim 1bgnmtm28 1engmss29 1geomas23 2mgeolcp37 1edcmss5 1hismek16 1plsmdm35", "1mengmnsps29 msanmnasr3 2mhismd34 2mphimnmd41 mplsmnadm33 mplssecadm33", "sandasr1 edcdss6 hisdmd34 phidmsc30 plsddm35", "lbenpc33 lhinaks34", "mpls meng msan 1mplskr20"],
+      "sat": ["1mhismnsmb30 mphimnmsc41 2mengas42", "mpls 1bgnmsm33 1geomlcp37 2mhissmb30 mphisecbr41", "mbgn meng 1edcmss3 1phimsecmsc27 1plsmpks28", "meng medc 1bgnmasd28 1geompb23 medcss6 1engmpkb27 1hismhb33 1plsmdm35", "edcm 1geompb23 1edcmsns3 2mhishb34 1plsmpks27", "bgndnm35 engdsps20 sandam1 edcdsns6 plsddm35", "lbenasd20"]
+    },
+    "bsc": {
+      "mon": ["", "1cmsmum52 1mphsmnak19", "mcmsajr51", "1mecosrb43 2mmthmnpk21", "mcmsrs52", "1cmsmrs52", "mcmsrs52"],
+      "tue": ["1mecotm22", "mcmsgd52", "mcmsum52 2mecotm42", "1cmsmum52", "1mphsmnss19 2mmthmnms21", "1mphsmnss19 1meltmnak15", "1mphsmnmks19"],
+      "wed": ["", "1mmthpk41 1mphsmnss10 1meltmnak15", "1cmsmskp15", "1cmsmskp15", "2meltskp15 1cmsmrs52 2mphsak19 2mecosrb27", "1cmsmum51 2meltskp15 ecodtm42", "1cmsmum51 ecodsrb42"],
+      "thu": ["", "2mphsak19 1mphsmnss10 2mecosrb22", "cmsmrs51 2mecotm42 2mmthmnpk21", "1meltmnak15 2mphsmks19 2meltskp15", "mcmsgd51 2mphsss19", "lhin alenpkb35", "1cmsmum52 2meltskp15"],
+      "fri": ["", "1mphsmnak10", "cmsmgd51", "mcmsrs51", "cmsmum25 2mphsss19", "lhinaks34", ""],
+      "sat": ["2mmthmnms21", "2mphsss19 1mphsmnmks42", "1mphsmnmks19 2mecosrb33 2mmthmnms43", "mcmsajr51", "1cmsmgd52 1mphsmnss19 2mphsmks21", "1cmsmgd52", "lbennm41"]
+    }
+  },
+  "4th": {
+    "bcom": {
+      "mon": ["", "", "", "", "", "", ""],
+      "tue": ["", "", "", "", "", "", ""],
+      "wed": ["", "", "", "", "", "", ""],
+      "thu": ["", "", "", "", "", "", ""],
+      "fri": ["", "", "", "", "", "", ""],
+      "sat": ["", "", "", "", "", "", ""]
+    },
+    "ba": {
+      "mon": ["", "", "", "", "", "", ""],
+      "tue": ["", "", "", "", "", "", ""],
+      "wed": ["", "", "", "", "", "", ""],
+      "thu": ["", "", "", "", "", "", ""],
+      "fri": ["", "", "", "", "", "", ""],
+      "sat": ["", "", "", "", "", "", ""]
+    },
+    "bsc": {
+      "mon": ["", "", "", "", "", "", ""],
+      "tue": ["", "", "", "", "", "", ""],
+      "wed": ["", "", "", "", "", "", ""],
+      "thu": ["", "", "", "", "", "", ""],
+      "fri": ["", "", "", "", "", "", ""],
+      "sat": ["", "", "", "", "", "", ""]
+    }
+  },
+  "5th": {
+    "bcom": {
+      "mon": ["", "1crcmpd16", "mpdmrks17", "", "bmcmpk16", "1crcmdm36 2clgmrks35", "2crgmdm16"],
+      "tue": ["", "", "mpdmrks17", "1crcmsg14", "2clgmpd14", "bmcmms16", ""],
+      "wed": ["", "", "", "", "1clcmdm36", "2cacmdm35 1crcmsg36", "2cacmdm35"],
+      "thu": ["", "", "mpdmrks16", "1clcmsg16", "1mrcndm33 2clgmsg36", "1clcmmd33 2crgmsg36", ""],
+      "fri": ["", "2clgmpd14", "", "mpdmrks16", "1crcmsg16 2crgmmd10", "1mrcndm10 2crgmsg20", "2crgmsg20"],
+      "sat": ["", "", "", "", "", "", ""]
+    },
+    "ba": {
+      "mon": ["mpls msan 1geompb23 engmss29", "medc hism 1bgnmpc30 1engmss33 1hismsmb36 1phimmd27", "geom phim 1bgnmasd43 2mgeoas37 1edcmgg05 1engmpkb35 1hismek33 1plsmadm36 1phimbr42 2mphimd27", "engm edcm 2mengss30 2msanasr01 2mplskr36", "geom bgnm meng 1bgnmtm28 2mbgnpc29 1edcmss03 1plsmdm33", "meng medc 2mhismd34 1mphimnmd33 2mbgnnm29", "mphi 2mphibr35"],
+      "tue": ["meng medc 1bgnmasd33 2mphimsc27", "mbgn geom 2mbgnpc30 1geomas23 2mgeopb39 1hismsmb36 1phimmsc27", "meng medc 1bgnmpc28 1engmpkb33 1geompb23 1hismhb36 1phimbr27", "mpls 2mhishb34 medcss06 mphimnmsc33 1bgnmsm35 1geomlcp23 2mplsadm07", "mpls meng msan 1mbgnnm28 1engmakp29 1geomas23 2msanam01 1edcmgg03 2mhismd33 1phimmd30 1plsmkr35", "mphi mpls 2mphibr35", "mpls 1mphimnmd33 2mplskr20"],
+      "wed": ["meng medc 1mbgnnm28 1engmpkb29", "medc mhis 1edcmsns02 1engmss30 1hismmd33 mhismnek20 1phimbr27", "mpls meng msan 1geomas23 1edcmgg03 2mengsps42 1hismek36 2mphibr41 1phimmsc27 1plsmkr20", "bgnm meng 1bgnmsm28 2mbgnnm05 2mengas20 1engmsps30 1sanmam01 1hismsmb36 1phimmsc27 1plsmdm42", "meng medc 2mhisek34 1geomlcp23 2medcsns03", "mbgn meng 1geomlcp23 1engmas43", "meng medc 2mhissmb34 1geomlcp23 2mplspks36"],
+      "thu": ["meng medc", "mphi mpls 1phimmsc27 1engmsps28", "mpls meng msan 1bgnmtm28 1engmas44 1geomas23 2msanasr 1edcmss03 1hismek30 1phimmsc27 1plsmpks43", "mpls mphi 1bgnmasd20 1engmakp29 2mgeolcp37 1edcmsns03 1hismek20 1phimbr27 1plsmkr33", "1mhismnek02 2mengsps27 2mbgnnm21 1mplsmnpks06", "bgnm meng 1mbgnnm42 1geomas23 1edcmss02 1engmss41 1phimmd29 1plsmdm22", "geom bgnm meng 2mbgntm29 1mhismnsmb34 medcans03 2mengpkb35 1mplsmndm36"],
+      "fri": ["bgnm meng 1bgnmtm28 1geomas23", "edcm mhis 1geomlcp23 1edcmsns03 1hismek34 2mphimd30 1plsmkr20", "bgnm meng 1bgnmpc30 2mbgnasd43 1engmsps44 1hismhb35 1plsmkr33", "edcm hism 1bgnmasd30 1geomlcp23 1engmss27 mhismnhb20 1plsmpks35", "geom mphimd41", "msan meng mpls 2msanasr01 2mengss29 2plsmpks20", "geom mphi"],
+      "sat": ["msan mpls", "mbgn meng 1mbgnnm28 1engmas29 1geompb23 1phimmsc27", "bgnm meng 1bgnmsm30 1engmsps35 1hismsmb34 1plsmdm35 1phimbr27", "msan mpls 2mhissmb34 2mengas35", "phim plsm 1engmpkb29 mphimnmsc27 1plsmdm35", "msan mpls mhissmb34 mphimnbr41", "mphi mpls 1mengakp29"]
+    },
+    "bsc": {
+      "mon": ["", "1ecomtm42", "1cmsmum52 1ecomtm44", "mcmsrs52", "1cmsmum51", "1cmsmajr51", "cmsmajr51"],
+      "tue": ["", "2mecotm42 mmthms21", "1cmsmgd51", "1cmsmgd51", "1cmsmum52", "1cmsmum52", "2meltskp15"],
+      "wed": ["", "mmthpk21", "mcmsrs51", "1cmsmgd25 2cmsmrs51 mecosrb33", "1cmsmgd51 mecotm22", "mcmsajr25 mmthms21", ""],
+      "thu": ["", "mmthpk36", "1cmsmum52", "1cmsmgd52 2mcmsajr52", "mcmsrs25 mecosrb43", "1cmsmajr52 2mecosrb20 2meltskp15", "1ecomtm22 mmthms21"],
+      "fri": ["", "1cmsmgd51 1ecomsrb22 2meltskp15", "1cmsmum51 mecotm22 2meltskp15", "1cmsmum51", "1cmsmgd51", "1cmsmgd51", ""],
+      "sat": ["1ecomsrb mmthpk27", "1cmsmum51 2mecosrb30", "1cmsmum51", "2meltskp15 mmthpk22", "2meltskp15", "cmsmajr51", ""]
+    }
+  },
+  "6th": {
+    "bcom": {
+      "mon": ["", "", "", "", "", "", ""],
+      "tue": ["", "", "", "", "", "", ""],
+      "wed": ["", "", "", "", "", "", ""],
+      "thu": ["", "", "", "", "", "", ""],
+      "fri": ["", "", "", "", "", "", ""],
+      "sat": ["", "", "", "", "", "", ""]
+    },
+    "ba": {
+      "mon": ["", "", "", "", "", "", ""],
+      "tue": ["", "", "", "", "", "", ""],
+      "wed": ["", "", "", "", "", "", ""],
+      "thu": ["", "", "", "", "", "", ""],
+      "fri": ["", "", "", "", "", "", ""],
+      "sat": ["", "", "", "", "", "", ""]
+    },
+    "bsc": {
+      "mon": ["", "", "", "", "", "", ""],
+      "tue": ["", "", "", "", "", "", ""],
+      "wed": ["", "", "", "", "", "", ""],
+      "thu": ["", "", "", "", "", "", ""],
+      "fri": ["", "", "", "", "", "", ""],
+      "sat": ["", "", "", "", "", "", ""]
+    }
+  },
+  "7th": {
+    "bcom": {
+      "mon": ["", "", "", "", "", "", ""],
+      "tue": ["", "", "", "", "", "", ""],
+      "wed": ["", "", "", "", "", "", ""],
+      "thu": ["", "", "", "", "", "", ""],
+      "fri": ["", "", "", "", "", "", ""],
+      "sat": ["", "", "", "", "", "", ""]
+    },
+    "ba": {
+      "mon": ["", "", "", "", "", "", ""],
+      "tue": ["", "", "", "", "", "", ""],
+      "wed": ["", "", "", "", "", "", ""],
+      "thu": ["", "", "", "", "", "", ""],
+      "fri": ["", "", "", "", "", "", ""],
+      "sat": ["", "", "", "", "", "", ""]
+    },
+    "bsc": {
+      "mon": ["", "", "", "", "", "", ""],
+      "tue": ["", "", "", "", "", "", ""],
+      "wed": ["", "", "", "", "", "", ""],
+      "thu": ["", "", "", "", "", "", ""],
+      "fri": ["", "", "", "", "", "", ""],
+      "sat": ["", "", "", "", "", "", ""]
+    }
+  },
+  "8th": {
+    "bcom": {
+      "mon": ["", "", "", "", "", "", ""],
+      "tue": ["", "", "", "", "", "", ""],
+      "wed": ["", "", "", "", "", "", ""],
+      "thu": ["", "", "", "", "", "", ""],
+      "fri": ["", "", "", "", "", "", ""],
+      "sat": ["", "", "", "", "", "", ""]
+    },
+    "ba": {
+      "mon": ["", "", "", "", "", "", ""],
+      "tue": ["", "", "", "", "", "", ""],
+      "wed": ["", "", "", "", "", "", ""],
+      "thu": ["", "", "", "", "", "", ""],
+      "fri": ["", "", "", "", "", "", ""],
+      "sat": ["", "", "", "", "", "", ""]
+    },
+    "bsc": {
+      "mon": ["", "", "", "", "", "", ""],
+      "tue": ["", "", "", "", "", "", ""],
+      "wed": ["", "", "", "", "", "", ""],
+      "thu": ["", "", "", "", "", "", ""],
+      "fri": ["", "", "", "", "", "", ""],
+      "sat": ["", "", "", "", "", "", ""]
+    }
+  }
+}
