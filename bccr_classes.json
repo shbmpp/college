@@ -103,7 +103,7 @@
       "sat": ["", "", "", "", "", "", ""]
     }
   },
-  "6th": {
+  "5th": {
     "bcom": {
       "mon": ["", "1crcmpd16", "mpdmrks17", "", "bmcmpk16", "1crcmdm36 2clgmrks35", "2crgmdm16"],
       "tue": ["", "", "mpdmrks17", "1crcmsg14", "2clgmpd14", "bmcmms16", ""],
@@ -129,7 +129,7 @@
       "sat": ["1ecomsrb mmthpk27", "1cmsmum51 2mecosrb30", "1cmsmum51", "2meltskp15 mmthpk22", "2meltskp15", "cmsmajr51", ""]
     }
   },
-  "5th": {
+  "6th": {
     "bcom": {
       "mon": ["", "", "", "", "", "", ""],
       "tue": ["", "", "", "", "", "", ""],
