@@ -1,7 +1,7 @@
 {
   "1st": {
     "bcom": {
-      "mon": ["", "2ENDCSECRKS14", "1FACMPD17", "2MPPMPD14", "1FACMDM17 1MICDtm17 2MICDsrb14", "", "1CONSKR17"],
+      "mon": ["", "2ENDCSECRKS14", "1FACMPD17", "2MPPMPD14", "1MICDtm17 2MICDsrb14", "", "1CONSKR17"],
       "tue": ["", "", "", "1MPPMPD17", "1envsak16", "1facmsg36 2mppmpd35", "engcas20"],
       "wed": ["", "2fagmrks14", "1endcmd17", "1facmrks17 2fagmsg14", "1mppmmd17 2mppmrks14", "2conskr20", ""],
       "thu": ["", "1endcrks17", "2fagmmd14", "1mppmrks17 2endcpd14", "1facmpd17 2mppmmd14", "2envsak17", "2fagmdm10"],
