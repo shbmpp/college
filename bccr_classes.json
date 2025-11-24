@@ -53,7 +53,7 @@
   },
   "3rd": {
     "bcom": {
-      "mon": ["", "facm", "", "cacmrks17", "", "mmktpd10", ""],
+      "mon": ["", "", "", "cacmrks17", "", "mmktpd10", ""],
       "tue": ["", "", "", "lhinaks20", "mmktrks17", "cacmdm41", "dtcmsg16"],
       "wed": ["", "", "mmktrks14", "cacmmd16", "dtcmsg16", "lbensm36 alenas29", "2dtcmdm10 1cadcsecajr52"],
       "thu": ["", "", "dtcmpd17", "cacmmd10", "cacmrks41", "mmktpd16", ""],
