@@ -1674,7 +1674,7 @@
       [...document.querySelectorAll('.hidden')].forEach(el => el.style.display = hasStudent ? 'flex' : 'none');
       document.getElementById("studentPromptBox").style.display = hasStudent ? "none" : "block";
       document.getElementById("edit").style.display = hasStudent ? "block" : "none";
-      fetchAndStore();
+      if (!hasStudent) fetchAndStore();
       if (hasStudent) {
         const stdDetails = JSON.parse(localStorage.getItem("student"));
         const sems = Object.fromEntries(
