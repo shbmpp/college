@@ -496,16 +496,20 @@
     td {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
       gap: 5px;
       width: 93vw;
       border-radius: 15px;
-      padding: 0px;
+      padding: 0;
     }
     
-    /* ✅ যখন td-এর ভিতরে একটাই <p> থাকবে → পুরো দুই কলাম জুড়ে দখল নেবে */
-    td>p:only-child {
+    /* একটাই <p> থাকলে → দেখাবে এক কলামের কার্ড, কিন্তু মাঝখানে */
+    /*td>p:only-child {
       grid-column: 1 / -1;
-    }
+      width: 100%;
+      max-width: calc(50% - 3px);
+      margin-inline: auto;
+    }*/
     
     /*td>p:last-child:nth-child(odd) {
       grid-column: 1 / -1;
