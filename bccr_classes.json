@@ -108,7 +108,7 @@
       "mon": ["", "1crcmpd16", "mpdmrks17", "", "bmcmpk16", "1crcmdm36 2clgmrks35 bmcm*pk30", "2crgmdm16 crcm*ns30", "mpdm*ajp30", "1mrcn*pm30 2libr*"],
       "tue": ["", "", "mpdmrks17", "1crcmsg14", "2clgmpd14", "bmcmms16 1mrcn*ns30 2libr*", "crcm*sk30", "clcm*ns30", "libr*"],
       "wed": ["", "", "", "", "1clcmdm36", "2cacmdm35 1crcmsg36 clcm*pm30", "2cacmdm35 crcm*sk30", "crcm*ns30", "1libr* 2cacm*ajp30"],
-      "thu": ["", "", "mpdmrks16", "1clcmsg16", "1mrcndm33 2clgmsg36", "1clcmmd33 2crgmsg36 bmcm*pk30", "1mrcn*pm 2mpdm*ns", "1mpdn*ns 2cacm*pm", "clcm*sk30"],
+      "thu": ["", "", "mpdmrks16", "1clcmsg16", "1mrcndm33 2clgmsg36", "1clcmmd33 2crgmsg36 bmcm*pk30", "1mrcn*pm 2mpdm*ns", "1mpdm*ns 2cacm*pm", "clcm*sk30"],
       "fri": ["", "2clgmpd14", "", "mpdmrks16", "1crcmsg16 2crgmmd10", "1mrcndm10 2crgmsg20 mpdm*ns30", "2crgmsg20 clcm*sk", "crcm*pm", "libr*"],
       "sat": ["", "", "", "", "", "", ""]
     },
