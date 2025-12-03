@@ -739,7 +739,7 @@
     const teacher_names = {
       MACD: { TM: "Tusher Mukherjee", AG: "Apala Ghosh", SRB: "Shawil Roy Basu", AJP: "A.J.P." },
       IEED: { TM: "Tusher Mukherjee", AG: "Apala Ghosh", SRB: "Shawil Roy Basu" },
-      COM: { SG: "Subhajit Ghosh", RKS: "Radha Kanta Sarkar", AJR: "Apurba Jyoti Roy", RS : "Rimpi Saha", MS: "Md. Saifuddin", PK: "Puja Koley", MD: "Mahadev De", DM: "Debarbata Mukherjee", PD: "Pinaki Dutta", SK: "Sadhunath Kundu", NS: "Nityalal Sen", PM: "Partha Manna", KS: "Krishna Sarkar", AJP: "A.J.P." },
+      COM: { SG: "Subhajit Ghosh", RKS: "Radha Kanta Sarkar", AJR: "Apurba Jyoti Roy", RS: "Rimpi Saha", MS: "Md. Saifuddin", PK: "Puja Koley", MD: "Mahadev De", DM: "Debarbata Mukherjee", PD: "Pinaki Dutta", SK: "Sadhunath Kundu", NS: "Nityalal Sen", PM: "Partha Manna", KS: "Krishna Sarkar", AJP: "A.J.P." },
       
       CMSM: { UM: "Unmesh Mandal", SKP: "Sovan Kumar Panda", AJR: "Apurba Jyoti Roy", GD: "Goutam Das", RS: "Rimpi Saha" },
       MECO: { SRB: "Shawil Roy Basu", TM: "Tusher Mukherjee", AG: "Apala Ghosh" },
@@ -1337,8 +1337,7 @@
             result[semester][stream][day] = periods.map(period => {
               if (!period.trim()) return "";
               
-              const codes = period.split(" ");
-              // ধরলাম semDigit, streamDigit বাইরের scope থেকে আছে
+              const codes = period.trim().split(/\s+/); // ধরলাম semDigit, streamDigit বাইরের scope থেকে আছে
               const transformedCodes = codes.map(code => {
                 // Normalize
                 let normalized = String(code || "").toUpperCase();
@@ -1541,7 +1540,7 @@
                 const timeStamp = (slots[time].split("—")[0]).replace(/(\d+)(AM|PM)/i, "$1 $2");
                 
                 // Example: inject BA/BSC special cases (তোমার আগের লজিক 그대로 রাখলাম)
-                /*if (subjectCode[1] === "2" && ["GEOM", "MGEO", "GEOD"].includes(subjectCode.slice(3, 7))) {
+                if (subjectCode[1] === "2" && ["GEOM", "MGEO", "GEOD"].includes(subjectCode.slice(3, 7))) {
                   if (!result[semester]["bsc"]) result[semester]["bsc"] = {};
                   if (!result[semester]["bsc"][day]) result[semester]["bsc"][day] = Array(periods.length).fill("");
                   result[semester]["bsc"][day][time] += `
@@ -1566,7 +1565,8 @@
       </time>
     </strong>
   </p>                  `;
-                } else*/ if (subjectCode[1] === "3" && ["ECOM", "MECO", "ECOD"].includes(subjectCode.slice(3, 7))) {
+                } else
+                if (subjectCode[1] === "3" && ["ECOM", "MECO", "ECOD"].includes(subjectCode.slice(3, 7))) {
                   if (!result[semester]["ba"]) result[semester]["ba"] = {};
                   if (!result[semester]["ba"][day]) result[semester]["ba"][day] = Array(periods.length).fill("");
                   result[semester]["ba"][day][time] += `
