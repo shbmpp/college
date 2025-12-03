@@ -2,41 +2,26 @@
   "1st": {
     "bcom": {
       "mon": ["", "2ENDCSECRKS14", "1FACMPD17", "libr 2MPPMPD14", "1MICDtm17 2MICDsrb14", "1micd*srb17 2mppm*ajp14", "1CONSKR17 1mppm*ajp17 2micd*srb14", "endc*pm", "fagm*ns"],
-      
       "tue": ["", "", "", "1MPPMPD17", "1envsak16", "1facmsg36 2mppmpd35 engc*as", "engcas20 envs*aks", "1facm*sk17 mppm*ajp14", "1mppm*ajp17 2facm*sk14"],
-      
       "wed": ["", "2fagmrks14", "1endcmd17", "1facmrks17 2fagmsg14", "1mppmmd17 2mppmrks14", "2conskr20 cons*dm", "1facm*ns17 2mppm*ajp14", "1mppm*ajp17 2facm*pm14", "1facm*pm17 2facm*ns14"],
-      
       "thu": ["", "1endcrks17", "libr 2fagmmd14", "1mppmrks17 2endcpd14", "1facmpd17 2mppmmd14", "1facmdm17 2envsak20 mppm*ajp", "2fagmdm10 1facm*sk17 2micd*ajp14", "1libr* 2fagm*sk14", "1micd*ajp17 2libr*"],
-      
       "fri": ["1endcrks17", "", "1mppmpd17 2endcrks14", "1facmmd17", "2mppmdm14", "1endcpd41 2endcmd36 1mppm*sk17 2libr*pm14", "1facm*ns17 2libr*", "1libr* 2fagm*ns14", "1libr*pm17 2mppm*sk14"],
-      
       "sat": ["", "1endcmd17", " 2endcmd14", "1fagmsg17", "1mppmdm17 2fagmsg14", "1libr*ajp17 2mppm*sk14", "1mppm*sk17 2libr*", "1libr* 2libr*ajp14", "facm*sk"]
     },
     "ba": {
       "mon": ["mengmn medcgg06 2mhissmb14 2mplsadm20", "mpls msan 2meng 1bgnmasd28 1geompb23 1edcmss01 1engmpkb33 1hismek34", "mbgn meng 1mbgnnm28 1geompb23 2sanmasr03 1edcmsns01 1hismmd20 1plsmdm22", "meng medc mBGNSECPC28 1geomas23 2mengpkb29 1hismek33", "BGNdASD36 sandasr02 edcdsns06 phidmd30", "1engcsps20", "1consdm20 2conskr17"],
-      
       "tue": ["msan mpls 1sanmasr30 1hismhb34 1bgnmpc28 ", "1bgnmasd28 edcmgg01 2mhishb20 phimsecbr27 1phimsecmsc27 2mplsadm35", "geom 1geomlcp23 2mgeoas38 1sanmam02 1edcmss01 1engmas41 1hismsmb34 mphimsc16 1plsmkr35", "phim 2mbgnpc28 2msanasr02 medcgg07 2mengas29 1phimmnmd16 2mplssec20", "1envsaks20", "mphi mbgnnm34 1engmakp29 1phimsecmd33", "2engcss29"],
-      
       "wed": ["MPLS MENG MSAN", "MPLS MENG MSAN 1sanmam01 1engmsps35  2mplsseckr36", "mbgn meng 2mbgntm28 1edcmsns01 1engmas29 ", "meng medc 1mbgnnm30 2medcsns06 1hismmd34 1geomlcp23 1plsmdd35", "mhis 1mbgnsectm28 1engmpkb29 1sanmam01 1phimsecmsc41 2mhismd20 1plsmpks35", "conspks17", "meng medc"],
-      
       "thu": ["msan mpls 1plsmadm35", "medc 1geompb23  1hismhb34 phimbr27 1plsmkr35 1engmakp29", "mgeo mphi bgnmsecsm35 2mgeopb39  1edcmgg6 1engmss29 1hismmd36 1phimmd33 2mplssecadm20 1plsmdm", "mgeo mphi 1bgnmtm30 msanasr02 medcgg06 2mengss36 1mphimnmsc41 2mplspks03", "bgndpc20 sandasr01 edcdgg07 engdpkb35 hisdsmb34 phidbr30", "1bgnmasd21 2envsaks20", "mgeo mbgn meng 2mbgnasd35 2mgeoas37 1msanmnasr20"],
-      
       "fri": ["meng medc msanam30", "mpls meng msan 1bgnmtm28 1engmsps29 1sanmasr02 1edcmss01 ", "mbgn meng msan 2bgnmsecsm20 2sanmam02 1hismmd34 1phimsecmsc41 1plsmadm36", "meng medc 2msanam2 1geomas23 1edcmsns1 1plsmdm36 1phimmd41", "mpls meng msan 1engmss29 1geomlcp23 1plsmkr33 2mplspks27", "edcdss7", "geom mphi"],
-      
       "sat": ["msan mpls 1bgnmsm28 1geomlcp23 1plsmpks33", "2medc 1sanmam01 1edcmss06 1hismhb34  1plsmpks35", "mgeo mphi 1mbgnnm28 1engmpkb29 1geompb23 2mgeolcp37 1edcmsns01 2mhishb20 ", "msan mpls msanam02  2mengsps29 2mphimnbr41", "mgeo meng mbgn 2mbgnasd30 engdas35", "sandam01 phidbr33", "msan ecom 1engmsps35"]
     },
     "bsc": {
       "mon": ["", "", "2mecosrb30 2mphsmks10 1mthmpk21", "1cmsmsecum52 2meltak15 2mphssecmks22", "cmsdajr51 phsdmks43 eltdak15", "engcpkb17", "consdm20"],
-      
       "tue": ["", "", "1mmthmnms21 2mphsss22 phsdmks10", "cmsmskp15 1mecotm42", "cmsmskp15", "1cmsmsecgd52 2meltskp15 2mphsmks19 ", "2mphsak19 eltdss15"],
-      
       "wed": ["2mphsss22 1mmthmnpk21", "1cmsmsecrs52 ", "1cmsmsecajr52 2mphssecss22 2meltak15 2mecosrb43 1mthmpk21", "1cmsmsecajr52 2mphsak22 1geomas23 1mthmms21", "1mthmms21 2meltss15", "conskr20", "1mmthrk21"],
-      
       "thu": ["2mphsmks21", "2mphsmks21 ", "phsdak19  1mthmms41", "1cmsmsecrs52 1mecotm27 2mphssecss19 1mthmpk21", "1cmsmsecajr52 1mthmms22", "envsss10", "1cmsmsecgd52"],
-      
       "fri": ["2mphsak22", "1mmthmnms21 2mphsss19", "1mcmsrs52 ecomsrb27 2mphssecak19 1mthmms21", "mcmsskp15 2mphssecss19", "mcmsrs52", "mcmsum52", ""],
-      
       "sat": ["ecomsrb17", " 1mthmms21", "1cmsmsecajr51 1mthmpk21 2mphsss22", "1ecomsrb30 2mphsmks19 1mmthmnms21", "2mphsss19 1mmthpk22", "2meltsecskp15", "mcmsskp15 1mmthmnrk21"]
     }
   },
@@ -69,41 +54,26 @@
   "3rd": {
     "bcom": {
       "mon": ["", "", "", "cacmrks17", "", "mmktpd10 ieed*tm27", "cacm*pm27", "dtcm*ns27", "mmkt*ajp27"],
-      
       "tue": ["", "", "", "lhinaks41", "mmktrks17", "cacmdm41 cacm*ns27", "dtcmsg16 mmkt*ajp27", "libr*", "dtcm*ns27"],
-      
       "wed": ["", "", "mmktrks14", "cacmmd16", "dtcmsg16", "lbensm36 alenas29 dtcm*ajp27", "2dtcmdm10 1cadcsecajr52 mmkt*pm27", "1cacm*sk27 2libr*", "1libr* 2cacm*sk27"],
-      
       "thu": ["", "", "dtcmpd17", "cacmmd10", "cacmrks41", "mmktpd16 lhin*aks lben*pc alen*as", "cacm*ns27", "dtcm*ajp27", "dtcm*pm27"],
-      
       "fri": ["", "cadcsectm52", "cadcsecmd52", "cacmpd17", "1ieedtm17 2ieedsrb20", "lhinaks34 dtcm*rs27", "mmktdm34 mmkt*pm27", "dtcm*sk27", "cacm*ns27"],
-      
       "sat": ["", "2cadcsecajr52", "", "cacmmd16", "dtcmmd16", "mmktdm36 libr*", "1dtcmdm36 dTcm*ajp27", "dtcm*sk27", "mmkt*ajp27"]
     },
     "ba": {
       "mon": ["medc mhis 1hismek34 1bgnmpc28", "mpls msanasr03 edcmgg02 2mplsadm35", "mgeo mphi 1bgnmtm27 1edcmss02 1engmsps29 1hismsmb34 1plsmkr16 phimmd41", "mbgnmnnm41 mengmnsps35 mhismnsmb34", "mgeo bgnm meng 1mbgnnm41 2mgeoas23 1engmss29 1hismmd34", "mphi 1geomas23 1phimbr41 2lbenasd20", ""],
-      
       "tue": ["medcmnss06 mphimnbr29", "mpls meng msan 2msanasr33 1engmas29 ", "mbgn meng 2mbgnasd20 1bgnmsm27 1engmakp29 1plsmpks05", "meng medc 1bgnmasd27 1geompb39 1engmss30 1plsmpks27 1hismmd36", "hism 1bgnmtm28 1geompb39 1edcmss02 1engmpkb30 2mhissmb34", "2alenss42 lhinaks20", "meng mpls 1mbgnnm35 msanam02 1geomlcp23 1hismsmb34 2mplspks17"],
-      
       "wed": ["mbgn meng 1hismmd34 1mbgnnm30", "medc mhis 1geomas23 1engmpkb29 1hismmnsmb34 1phimbr42", "mpls msan meng 1bgnmsm33 1engmss41 2msanam03 1hismsmb34 1mphimsc10 1mplspks30", "medcmngg02 2mengsecss44 mhismnek43 2mplsmnkr07", "mphi 1bgnmnm30 1engmsps36 1geomas23 1mplsdm7", "sandam1 edcdgg7 engdss33 hisdsmb34 phidbr22 plsddm41", ""],
-      
       "thu": ["mhismnhb34", "mpls meng msan 1engmas43 2msanasr3 1edcmgg6 1hismsmb30 2mhisek33 1phimmsc41 mplssecadm20", "bgnm meng 2mbgnnm5 1geomlcp37 1edcmsns2 1hismhb34 1phimbr10 1plsmkr7", "meng medc 1bgnmpc35 1geompb23 medcss7 1hismmd34 1phimmd33 2mhishb42 1plsmdm28", "geom phim 1bgnmasd28 1geomlcp37 2mgeopb39 1edcmsns3 1engmakp29 2mphimd10 1plsmkr42", "1alensps29", "bgnm meng mgeo 2bgnmsm33 1geomlcp23 1plsmpks27"],
-      
       "fri": ["medc mhis 1medcmnsns3 2mhismnek20 1phimsecmd10 1engmsps29", "edcm hism 1bgnmpc30 1geomas37 2mhismnhb36 1phimmsc10 1plsmadm35", "geom phim 1bgnmtm28 1engmss29 1geomas23 2mgeolcp37 1edcmss5 1hismek16 1plsmdm35", "1mengmnsps29 msanmnasr3 2mhismd34 2mphimnmd41 mplsmnadm33 mplssecadm33", "sandasr1 edcdss6 hisdmd34 phidmsc30 plsddm35", "lbenpc33 lhinaks34", "mpls meng msan 1mplskr36"],
-      
       "sat": ["1mhismnsmb30 mphimnmsc41 2mengas29", "mpls 1bgnmsm33 1geomlcp37 2mhissmb30 mphisecbr41", "mbgn meng 1edcmss3 1phimsecmsc27 1plsmpks28", "meng medc 1bgnmasd28 1geompb23 medcss6 1engmpkb27 1hismhb33 1plsmdm35", "edcm 1geompb23 1edcmsns3 2mhishb34 1plsmpks27", "bgndnm21 engdsps20 sandam1 edcdsns6 plsddm35", "lbenasd20"]
     },
     "bsc": {
       "mon": ["", "1cmsmum52 1mphsmnak19", "mcmsajr51", "1mecosrb43 2mmthmnpk21", "mcmsrs52", "1cmsmrs52 2mphsak21", "mcmsrs52"],
-      
       "tue": ["1mecotm22", "mcmsgd52", "mcmsum52 2mecotm42", "1cmsmum52", "1mphsmnss19 2mmthmnms21", "1mphsmnss19 1meltmnak15 1lhinaks20", "1mphsmnmks19"],
-      
       "wed": ["", "1mmthpk41 1mphsmnss10 1meltmnak15", "1cmsmskp15", "1cmsmskp15", "2meltskp15 1cmsmrs52 2mphsak19 2mecosrb27", "1cmsmum51 2meltskp15 ecodtm42", "1cmsmum51 ecodsrb42"],
-      
       "thu": ["", "2mphsak19 1mphsmnss10 2mecosrb22", "cmsmrs51 2mecotm42 2mmthmnpk21", "1meltmnak15 2mphsmks19 2meltskp15", "mcmsgd51 2mphsss19", "lhin alenpkb35", "1cmsmum52 2meltskp15"],
-      
       "fri": ["", "1mphsmnak10", "cmsmgd51", "mcmsrs51", "1cmsmum25 2mphsss19", "lhinaks34", ""],
-      
       "sat": ["2mmthmnms21", "2mphsss19 1mphsmnmks42", "1mphsmnmks19 2mecosrb33 2mmthmnms43", "mcmsajr51", "1cmsmgd52 1mphsmnss19 2mphsmks21", "1cmsmgd52", "lbennm41"]
     }
   },
@@ -136,41 +106,26 @@
   "5th": {
     "bcom": {
       "mon": ["", "1crcmpd17", "mpdmrks14", "", "bmcmpk16", "1crcmdm36 2clgmrks35 bmcm*pk30", "2crgmdm16 crcm*ns30", "mpdm*ajp30", "1mrcn*pm30 2libr*"],
-      
       "tue": ["", "", "mpdmrks17", "1crcmsg14", "2clgmpd14", "bmcmms21 1mrcn*ns30 2libr*", "2cacmdm36 crcm*sk30", "clcm*ns30", "libr*"],
-      
       "wed": ["", "", "", "", "1clcmdm42", "2cacmdm35 1crcmsg16 clcm*pm30", " crcm*sk30", "crcm*ns30", "1libr* 2cacm*ajp30"],
-      
-      "thu": ["", "", "mpdmrks16", "1clcmsg16", "1mrcndm16 2clgmsg36", "1clcmmd16 2crgmsg36 bmcm*pk30", "1mrcn*pm 2mpdm*ns", "1mpdn*ns 2cacm*pm", "clcm*sk30"],
-      
+      "thu": ["", "", "mpdmrks16", "1clcmsg16", "1mrcndm16 2clgmsg36", "1clcmmd16 2crgmsg36 bmcm*pk30", "1mrcn*pm 2mpdm*ns", "1mpdm*ns 2cacm*pm", "clcm*sk30"],
       "fri": ["", "2clgmpd14", "", "mpdmrks16", "1crcmsg16 2crgmmd10", "1mrcndm10 2crgmsg20 mpdm*ns30", "2crgmsg20 clcm*sk", "crcm*pm", "libr*"],
-      
       "sat": ["", "", "", "", "", "", ""]
     },
     "ba": {
       "mon": ["mpls msan 1geompb23 engmss29", "medc hism 1bgnmpc30 1engmss29 1hismsmb36 1phimmd27 2msanasr03", "geom phim 1bgnmasd43 2mgeoas37 1edcmgg05  1hismek36 1plsmadm33 1phimbr42 ", "engm edcm 2mhismd20 medcmngg7 2mphimnbr27  2mengss30  2mplskr36", "geom bgnm meng 1bgnmtm28 2mbgnpc27 1edcmss03 1plsmdm33", "mengmn medcmn 2mhismd34 1mphimnmd33 2mbgnnm22 2medcsns3", "mphi 1mphimd33"],
-      
       "tue": ["meng medc 1bgnmasd33 2mphimsc27", "mbgn geom 2mbgnpc30 1geomas23 2mgeopb39 1hismsmb34 1phimmsc36", "meng medc 1bgnmpc33 1engmpkb30 1geompb23 1hismhb36 1phimmd43 2medcgg2", "mpls 2mhishb34 medcss06 mphimnmsc33 1bgnmsm35 1geomlcp23 2mplsadm07", "mpls meng msan 1mbgnnm22 1engmakp29 1geomas23 2msanam01 1edcmgg03 2mhismd33 1phimbr10 1plsmkr35", "mphi mpls ", "mpls 1mphimnmd33 2mplskr41"],
-      
       "wed": ["meng medc  1engmpkb29", "medc mhis 1mbgnnm28 1edcmsns02 1engmss30 1hismmd33 mhismnek20 ", "mpls meng msan 1geomas23 1edcmgg02 2mengsps42 1hismek36 1phimbr27   1plsmkr20", "bgnm meng 1bgnmsm28 2mbgnnm05 2mengas20 1engmsps29 1sanmam01 1hismsmb36 1phimmsc27 1plsmdm42", "meng medc 2mhisek34 2mphibr33 1geomlcp23 2medcsns03", "mbgn meng 1geomlcp23 ", "meng medc 2mhissmb34 1geomlcp23 2mplspks36"],
-      
-      "thu": ["meng medc", "mphi mpls  1engmsps28 2msanam42", "mpls meng msan 1bgnmtm28 1engmas44 1geomas23 2msanam1 1edcmss03 1hismek30 1phimmsc27 1plsmpks43", "mpls mphi 1bgnmasd35 1engmakp29 2mgeolcp37 1edcmsns03 1hismek20 1phimbr43 1plsmkr33", "1mhismnek33 2mengsps27 2medcss2 1mphibr36 2mbgnnm21 1mplsmnpks06", "bgnm meng 1mbgnnm42 1geomas23  1engmss41 1phimmd33 1hismmd21 1plsmdm22", "geom bgnm meng  1mhismnsmb34 medcans03 2mengpkb29 1mplsmndm36"],
-      
+      "thu": ["meng medc", "mphi mpls  1engmsps28 2msanam42", "mpls meng msan 1bgnmtm28 1engmas44 1geomas23 2msanam1 1edcmss03 1hismek30 1phimmsc27 1plsmpks43", "mpls mphi 1bgnmasd35 1engmakp29 2mgeolcp37 1edcmsns03 1hismek20 1phimbr43 1plsmkr33", "1mhismnek33 2mengsps27 2medcss2 1mphibr36 2mbgnnm21 1mplsmnpks06", "bgnm meng 1mbgnnm42 1geomas23  1engmss41 1phimmd33 1hismmd21 1plsmdm22", "geom bgnm meng  1mhismnsmb34 medcsns03 2mengpkb29 1mplsmndm36"],
       "fri": ["bgnm meng 1bgnmtm28 1geomas23", "edcm mhis 1geomlcp23 1edcmsns03 1hismek34 2mphimd33 1plsmkr20", "bgnm meng 1bgnmpc30  1engmsps44 1hismhb42 1plsmkr33", "edcm hism 1bgnmasd30 1geomlcp23 1engmss27 mhismnhb20 1plsmpks35", "geom mphi mphimd41", "msan meng mpls 2msanasr01 2mengss29 2plsmpks35", "geom mphi"],
-      
       "sat": ["msan mpls", "mbgn meng 1mbgnnm28 1engmas29 1geompb23 1phimmsc27", "bgnm meng 1bgnmsm30 1engmsps36 1hismsmb34 1plsmdm35 1phimbr41", "msan mpls 2mhissmb34 2medcsns3 2mengas20", "phim plsm 1engmpkb29 mphimnmsc33 1plsmdm35 1edcmss1", "msan mpls mhismnsmb34 1mengakp29", "mphi mpls "]
     },
     "bsc": {
       "mon": ["", "1ecomtm42", "1cmsmum52 1ecomtm44", "mcmsrs52", "1cmsmum51", "1cmsmajr51", "cmsmajr51"],
-      
       "tue": ["", "2mecotm42 mmthms21", "1cmsmgd51", "1cmsmgd51", "1cmsmum52", "1cmsmum52", "2meltskp15"],
-      
       "wed": ["", "mmthpk21", "mcmsrs51 ecomtm22", "1cmsmum25 2cmsmrs51 mecosrb33", "1cmsmum51 mecotm22", "mcmsajr25 ", ""],
-      
       "thu": ["", "mmthpk36", "1cmsmum52", "1cmsmgd52 2mcmsajr52", "mcmsrs25 mecosrb43", "1cmsmajr52 2mecosrb20 2meltskp15", "1ecomtm22 mmthms21"],
-      
       "fri": ["", "1cmsmgd51 1ecomsrb22 2meltskp15", "1cmsmum51 mecotm22 2meltskp15", "1cmsmum51", "1cmsmgd51", "1cmsmgd51", ""],
-      
       "sat": ["1ecomsrb17 mmthpk27", "mmthmnpk22 2mecosrb30", "1cmsmgd51", "2meltskp15 1cmsmgd51 mmthpk22", "2meltskp15 mmthmnms21", "cmsmajr51", ""]
     }
   },
