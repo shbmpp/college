@@ -123,7 +123,7 @@
     "bsc": {
       "mon": ["", "1ecomtm42", "1cmsmum52 1ecomtm44", "mcmsrs52", "1cmsmum51", "1cmsmajr51", "cmsmajr51"],
       "tue": ["", "2mecotm42 mmthms21", "1cmsmgd51", "1cmsmgd51", "1cmsmum52", "1cmsmum52", "2meltskp15"],
-      "wed": ["", "mmthpk21", "mcmsrs51 ecomtm22", "1cmsmum25 2cmsmrs51 mecosrb33", "1cmsmum51 mecotm22", "mcmsajr25 ", ""],
+      "wed": ["", "mmthms21", "mcmsrs51 ecomtm22", "1cmsmum25 2cmsmrs51 mecosrb33", "1cmsmum51 mecotm22", "mcmsajr25 ", ""],
       "thu": ["", "mmthpk36", "1cmsmum52", "1cmsmgd52 2mcmsajr52", "mcmsrs25 mecosrb43", "1cmsmajr52 2mecosrb20 2meltskp15", "1ecomtm22 mmthms21"],
       "fri": ["", "1cmsmgd51 1ecomsrb22 2meltskp15", "1cmsmum51 mecotm22 2meltskp15", "1cmsmum51", "1cmsmgd51", "1cmsmgd51", ""],
       "sat": ["1ecomsrb17 mmthpk27", "mmthmnpk22 2mecosrb30", "1cmsmgd51", "2meltskp15 1cmsmgd51 mmthpk22", "2meltskp15 mmthmnms21", "cmsmajr51", ""]
